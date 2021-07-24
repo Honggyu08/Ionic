@@ -1,12 +1,13 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { HomePage } from './home.page';
+import { Routes, RouterModule } from '@angular/router';
+
+import { StorePage } from './store.page';
 
 const routes: Routes = [
   {
     path: '',
-    component: HomePage,
-  },  
+    component: StorePage
+  }/*,  
   {
     path: 'ideas',
     loadChildren: () => import('../ideas/ideas.module').then(m => m.IdeasPageModule)
@@ -20,13 +21,13 @@ const routes: Routes = [
     loadChildren: () => import('../diary/diary.module').then(m => m.DiaryPageModule)
   },
   {
-    path: 'store',
-    loadChildren: () => import('../store/store.module').then(m => m.StorePageModule)
-  }
+    path: 'home',
+    loadChildren: () => import('../home/home.module').then(m => m.HomePageModule)
+  }*/
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class HomePageRoutingModule {}
+export class StorePageRoutingModule {}
