@@ -18,23 +18,7 @@ const routes: Routes = [
   {
     path: 'skin-survey',
     loadChildren: () => import('./skin-survey/skin-survey.module').then( m => m.SkinSurveyPageModule)
-  },  {
-    path: 'ideas',
-    loadChildren: () => import('./ideas/ideas.module').then( m => m.IdeasPageModule)
   },
-  {
-    path: 'solution',
-    loadChildren: () => import('./solution/solution.module').then( m => m.SolutionPageModule)
-  },
-  {
-    path: 'diary',
-    loadChildren: () => import('./diary/diary.module').then( m => m.DiaryPageModule)
-  },
-  {
-    path: 'store',
-    loadChildren: () => import('./store/store.module').then( m => m.StorePageModule)
-  },
-
 ];
 
 @NgModule({
