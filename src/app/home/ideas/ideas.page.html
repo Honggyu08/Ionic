@@ -1,0 +1,88 @@
+<ion-menu side="start" menuId="category" contentId="main">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <ion-button color="medium">로그인</ion-button>
+    <ion-button color="medium">회원가입</ion-button><br>
+    <ion-button size="small" color="medium"><ion-icon name="person-outline"></ion-icon>MY PAGE</ion-button>
+    <ion-button size="small" color="medium"><ion-icon name="cart-outline"></ion-icon>ORDER</ion-button>
+    <ion-button size="small" color="medium"><ion-icon name="cart-outline"></ion-icon>CART</ion-button><br>
+    <ion-button color="medium"><ion-icon name="flask-outline"></ion-icon>조제관리사/뷰티전문가 등록하기</ion-button>
+
+    <ion-list>
+      <ion-item>NOTICE</ion-item>
+      <ion-item>EVENT</ion-item>
+      <ion-item>REVIEW</ion-item>
+      <ion-item>NEW</ion-item>
+      <ion-item>BEST</ion-item>
+      <ion-item>Q & A</ion-item>
+    </ion-list>
+    <ion-note color="dark"> CS INFO<br>
+      OPEN 월요일 ~ 금요일<br>
+      상담 오전 09:00 ~ 오후 17:00<br>
+      점심 오전 12:00 ~ 오후 13:00<br>
+      토요일/일요일/공휴일 휴무</ion-note>
+  </ion-content>
+</ion-menu>
+
+<ion-router-outlet id="main"></ion-router-outlet>
+
+<div>
+  <ion-header>
+    <ion-toolbar>
+      <ion-button slot="start" color="translucent">
+        <ion-menu-button color="dark"></ion-menu-button>
+      </ion-button>
+      
+      <ion-title>
+        <div class="title">88 MADE</div>
+      </ion-title>
+
+      <ion-button slot="end" color="translucent">
+        <ion-icon name="search-outline" color="dark"></ion-icon>
+      </ion-button>
+
+      <ion-button slot="end" color="translucent">
+        <ion-icon name="cart-outline" color="dark"></ion-icon>
+      </ion-button>
+    
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+    <h1>Ideas</h1>
+  </ion-content>
+
+  <ion-tabs>
+    <ion-tab-bar slot="bottom" color="translucent">
+      <ion-tab-button tab="ideas">
+        <ion-icon name="bulb-outline" color="dark"></ion-icon>
+        <ion-label>아이디어</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="solution">
+        <ion-icon name="sparkles-outline" color="dark"></ion-icon>
+        <ion-label>솔루션</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="home">
+        <ion-icon name="home-sharp" color="dark"></ion-icon>
+        <ion-label>HOME</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button tab="diary">
+        <ion-icon name="book-outline" color="dark"></ion-icon>
+        <ion-label>스킨 다이어리</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="store">
+        <ion-icon name="bag-handle-outline" color="dark"></ion-icon>
+        <ion-label>STORE</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+</div>
