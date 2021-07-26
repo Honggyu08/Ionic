@@ -36,6 +36,10 @@
 
   .menubutton {
     color: black;
+
+    .manage {
+      margin-right: 5%;
+    };
   }
 
   .note {
@@ -53,10 +57,6 @@
     width: 45%;
   }
 
-  .myPage {
-    margin-left: 7%;
-  }
-
-  .manage {
-    margin-right: 5%;
+  .buttonContainer {
+    margin-left: 20px;
   }
