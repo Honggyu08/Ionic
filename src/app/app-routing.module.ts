@@ -18,7 +18,11 @@ const routes: Routes = [
   {
     path: 'skin-survey',
     loadChildren: () => import('./skin-survey/skin-survey.module').then( m => m.SkinSurveyPageModule)
+  },  {
+    path: 'skinnn-survey2',
+    loadChildren: () => import('./skinnn-survey2/skinnn-survey2.module').then( m => m.SkinnnSurvey2PageModule)
   },
+
 ];
 
 @NgModule({
