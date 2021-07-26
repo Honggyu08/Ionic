@@ -6,21 +6,50 @@
   </ion-header>
 
   <ion-content>
-    <ion-button color="medium">로그인</ion-button>
-    <ion-button color="medium">회원가입</ion-button><br>
-    <ion-button class="menubutton" size="small" color="translucent"><ion-icon name="person-outline"></ion-icon>MY PAGE</ion-button>
-    <ion-button class="menubutton" size="small" color="translucent"><ion-icon name="cart-outline"></ion-icon>ORDER</ion-button>
-    <ion-button class="menubutton" size="small" color="translucent"><ion-icon name="cart-outline"></ion-icon>CART</ion-button><br>
-    <ion-button class="menubutton" color="translucent"><ion-icon name="flask-outline"></ion-icon>조제관리사/뷰티전문가 등록하기</ion-button>
+    <div>
+      <ion-button class="signIn" size="small" color="medium">
+        로그인
+      </ion-button>
+      <ion-button class="signUp" size="small" color="medium">
+        회원가입
+      </ion-button>
+    </div>
+    <div>
+      <ion-button class="menubutton myPage" size="small" color="translucent">
+        <ion-icon name="person-outline"></ion-icon>MY PAGE
+      </ion-button>
+      <ion-button class="menubutton order" size="small" color="translucent">
+        <ion-icon name="cart-outline"></ion-icon>ORDER
+      </ion-button>
+      <ion-button class="menubutton cart" size="small" color="translucent">
+        <ion-icon name="cart-outline"></ion-icon>CART
+      </ion-button>
+    </div>
+    <ion-button class="menubutton manage" expand="block" color="translucent">
+      <ion-icon name="flask-outline"></ion-icon>조제관리사/뷰티전문가 등록하기
+    </ion-button>
 
     <ion-list>
-      <ion-item class="menuitem">NOTICE</ion-item>
-      <ion-item class="menuitem">EVENT</ion-item>
-      <ion-item class="menuitem">REVIEW</ion-item>
-      <ion-item class="menuitem">NEW</ion-item>
-      <ion-item class="menuitem">BEST</ion-item>
-      <ion-item class="menuitem">Q & A</ion-item>
+      <ion-item class="menuitem" (click)="goPage()">
+        NOTICE
+      </ion-item>
+      <ion-item class="menuitem">
+        EVENT
+      </ion-item>
+      <ion-item class="menuitem">
+        REVIEW
+      </ion-item>
+      <ion-item class="menuitem">
+        NEW
+      </ion-item>
+      <ion-item class="menuitem">
+        BEST
+      </ion-item>
+      <ion-item class="menuitem">
+        Q & A
+      </ion-item>
     </ion-list>
+    <!-- 각 공지, 이벤트, 리뷰, 뉴, 베스트, 질문 페이지 만들어서 (click)=""으로 연결 -->
     <div class="note">
       <ion-note color="dark"> CS INFO<br>
         OPEN 월요일 ~ 금요일<br>
@@ -63,27 +92,27 @@
   <ion-tabs>
     <ion-tab-bar slot="bottom">
       <ion-tab-button tab="ideas">
-        <ion-icon name="bulb-outline" color="dark"></ion-icon>
+        <ion-icon name="bulb-outline"></ion-icon>
         <ion-label>아이디어</ion-label>
       </ion-tab-button>
 
       <ion-tab-button tab="solution">
-        <ion-icon name="sparkles-outline" color="dark"></ion-icon>
+        <ion-icon name="sparkles-outline"></ion-icon>
         <ion-label>솔루션</ion-label>
       </ion-tab-button>
 
       <ion-tab-button tab="home-tab">
-        <ion-icon name="home-sharp" color="dark"></ion-icon>
+        <ion-icon name="home-sharp"></ion-icon>
         <ion-label>HOME</ion-label>
       </ion-tab-button>
   
       <ion-tab-button tab="diary">
-        <ion-icon name="book-outline" color="dark"></ion-icon>
+        <ion-icon name="book-outline"></ion-icon>
         <ion-label>스킨 다이어리</ion-label>
       </ion-tab-button>
 
       <ion-tab-button tab="store">
-        <ion-icon name="bag-handle-outline" color="dark"></ion-icon>
+        <ion-icon name="bag-handle-outline"></ion-icon>
         <ion-label>STORE</ion-label>
       </ion-tab-button>
     </ion-tab-bar>
