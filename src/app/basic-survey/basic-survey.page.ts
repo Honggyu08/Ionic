@@ -13,8 +13,8 @@ export class BasicSurveyPage implements OnInit {
   ngOnInit() {
   }
 
-  goSkinSurvey2() {
-    this.router.navigate(['/skinnn-survey2']);
+  goSkinSurvey() {
+    this.router.navigate(['/skin-survey']);
   }
 
 }

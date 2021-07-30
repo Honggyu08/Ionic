@@ -21,15 +21,20 @@
 }
 
 .container {
-    position: absolute;
+    @extend %m0auto;
+    position: relative;
     top: 27.5%;
-    left: 5%;
-    width: 320px;
+    width: 80%;
 }
 
 .button {
-    position: absolute;
-    top: 70%;
-    left: 10%;
-    width: 300px;
+    @extend %m0auto;
+    position: relative;
+    top: 40%;
+    width: 80%;
+    .buttonIn {
+        width: 100%;
+    }
 }
+
+%m0auto { margin: 0 auto; }

@@ -1,43 +1,45 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>!!!Survey Start!!!</ion-title>
+    <div class="toolbar">
+      <div><img src="assets/logo.png" alt="logo" class="logo"></div>
+      <div class="name">피부 기초 설문</div>
+    </div>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <div>
-    <ion-list>
-      <ion-radio-group value="biff">
-        <ion-list-header>
-          <ion-label>평소 피부 고민은?</ion-label>
-        </ion-list-header>
-    
-        <ion-item>
-          <ion-label>건조</ion-label>
-          <ion-radio slot="start" value="a"></ion-radio>
-        </ion-item>
-    
-        <ion-item>
-          <ion-label>미백</ion-label>
-          <ion-radio slot="start" value="b"></ion-radio>
-        </ion-item>
-    
-        <ion-item>
-          <ion-label>주름</ion-label>
-          <ion-radio slot="start" value="c"></ion-radio>
-        </ion-item>
+  <ion-list>
+    <ion-radio-group value="biff">
+      <ion-list-header>
+        <ion-label>평소 피부 고민은?</ion-label>
+      </ion-list-header>
 
-        <ion-item>
-          <ion-label>홍조</ion-label>
-          <ion-radio slot="start" value="d"></ion-radio>
-        </ion-item>
+      <ion-item>
+        <ion-label>건조</ion-label>
+        <ion-radio slot="start" value="a"></ion-radio>
+      </ion-item>
+    
+      <ion-item>
+        <ion-label>미백</ion-label>
+        <ion-radio slot="start" value="b"></ion-radio>
+      </ion-item>
+      
+      <ion-item>
+        <ion-label>주름</ion-label>
+        <ion-radio slot="start" value="c"></ion-radio>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label>홍조</ion-label>
+        <ion-radio slot="start" value="d"></ion-radio>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label>트러블</ion-label>
+        <ion-radio slot="start" value="e"></ion-radio>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
 
-        <ion-item>
-          <ion-label>트러블</ion-label>
-          <ion-radio slot="start" value="e"></ion-radio>
-        </ion-item>
-      </ion-radio-group>
-    </ion-list>
-  </div>
-  <div><ion-button class="button" (click)="goSkinSurvey()" slot="ion-button" expand="block" color="dark">Next Survey</ion-button></div>
+  <div class="button"><ion-button class="buttonIn" (click)="goHome()" slot="ion-button" expand="block" color="dark">FINISH</ion-button></div>
 </ion-content>

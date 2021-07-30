@@ -38,7 +38,7 @@
     color: black;
 
     .manage {
-      margin-right: 5%;
+      @extend %m0auto;
     };
   }
 
@@ -48,15 +48,28 @@
     margin: 20px;
   }
 
-  .signIn {
-    width: 45%;
-    margin-left: 4%;
-  }
+  .signcontainer{
+    .sign {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-around;
+    }
 
-  .signUp {
-    width: 45%;
+    .signIn {
+      width: 45%;
+    }
+  
+    .signUp {
+      width: 45%;
+    }
   }
 
   .buttonContainer {
-    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
   }
+
+%m0auto { margin: 0 auto; }

@@ -6,28 +6,36 @@
   </ion-header>
 
   <ion-content>
+    <div class="signcontainer">
+      <div class="sign">
+        <ion-button class="signIn" size="small" color="medium">
+          로그인
+        </ion-button>
+        <ion-button class="signUp" size="small" color="medium">
+          회원가입
+        </ion-button>
+      </div>
+    </div>
+    
     <div>
-      <ion-button class="signIn" size="small" color="medium">
-        로그인
-      </ion-button>
-      <ion-button class="signUp" size="small" color="medium">
-        회원가입
+      <div class="buttonContainer">
+        <ion-button class="menubutton myPage" size="small" color="translucent">
+          <ion-icon name="person-outline"></ion-icon>MY PAGE
+        </ion-button>
+        <ion-button class="menubutton order" size="small" color="translucent">
+          <ion-icon name="cart-outline"></ion-icon>ORDER
+        </ion-button>
+        <ion-button class="menubutton cart" size="small" color="translucent">
+          <ion-icon name="cart-outline"></ion-icon>CART
+        </ion-button>
+      </div>
+    </div>
+  
+    <div>
+      <ion-button class="menubutton manage" expand="block" color="translucent">
+        <ion-icon name="flask-outline"></ion-icon>조제관리사/뷰티전문가 등록하기
       </ion-button>
     </div>
-    <div class="buttonContainer">
-      <ion-button class="menubutton myPage" size="small" color="translucent">
-        <ion-icon name="person-outline"></ion-icon>MY PAGE
-      </ion-button>
-      <ion-button class="menubutton order" size="small" color="translucent">
-        <ion-icon name="cart-outline"></ion-icon>ORDER
-      </ion-button>
-      <ion-button class="menubutton cart" size="small" color="translucent">
-        <ion-icon name="cart-outline"></ion-icon>CART
-      </ion-button>
-    </div>
-    <ion-button class="menubutton manage" expand="block" color="translucent">
-      <ion-icon name="flask-outline"></ion-icon>조제관리사/뷰티전문가 등록하기
-    </ion-button>
 
     <ion-list>
       <ion-item class="menuitem" (click)="goPage()">
@@ -118,13 +126,3 @@
     </ion-tab-bar>
   </ion-tabs>
 </div>
-
-<!-- 
-메뉴 눌렀을 때 안에 구성 하기
-검색창
-위시리스트 페이지 구성
-
-탭 눌렀을 때 창 변환
-탭 눌렀을 때 탭 색 바뀌게 하기
-탭 :hover 설정
--->
