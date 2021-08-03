@@ -1,0 +1,23 @@
+.container {
+    height: 100vh;
+
+    .userinfo {
+        height: 30%;
+
+        .profile {
+            width: 50%;
+            height: 80%;
+            margin: 0 auto;
+        }
+    
+        .photo {
+            height: 20%;
+
+            .bluetooth {
+                margin-right: 1%;
+            }
+        }
+        
+        border-bottom: 1px solid black;
+    }
+}

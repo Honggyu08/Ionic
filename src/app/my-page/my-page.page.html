@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>myPage</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="container" fullscreen>
+    <div class="userinfo">
+      <div class="profile">
+        <img src="./user-in-a-square.png"/>
+      </div>
+      <div class="photo">
+        <ion-toolbar>
+          <ion-button slot="start" size="small" color="dark" fill="outline">
+            프로필 사진
+          </ion-button>
+          <ion-button class="bluetooth" (click)="bluetoothPage()" slot="end" size="small" color="dark" fill="outline">
+            <ion-icon name="bluetooth-outline"></ion-icon>
+          </ion-button>
+        </ion-toolbar>
+      </div>
+      
+    </div>
+  </div>
+</ion-content>

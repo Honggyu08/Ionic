@@ -13,4 +13,8 @@ export class HomePage {
   goPage() {
     this.router.navigate(['/basic-survey']);
   }
+
+  myPage() {
+    this.router.navigate(['/my-page']);
+  }
 }
