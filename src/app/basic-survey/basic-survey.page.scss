@@ -5,7 +5,7 @@
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
-}
+} //상단에 표시한 정보들의 배열 조정
 
 .logo {
     align-items: left;
@@ -14,18 +14,19 @@
     margin-top: 15px;
     margin: 10px;
     margin-bottom: 0px;
-}
+} //로고 크기 및 위치 조정
+
 .name {
     font-weight: bold;
     margin-top: 40px;
-}
+} //페이지명 폰트 및 위치 조정
 
 .container {
     @extend %m0auto;
     position: relative;
     top: 27.5%;
     width: 80%;
-}
+} //설문란의 위치 및 크기 조정
 
 .button {
     @extend %m0auto;
@@ -35,6 +36,6 @@
     .buttonIn {
         width: 100%;
     }
-}
+} //다음 페이지로 넘어가는 버튼의 크기, 위치 조정
 
 %m0auto { margin: 0 auto; }

@@ -27,18 +27,21 @@ const routes: Routes = [
         path: 'store',
         loadChildren: () => import('./store/store.module').then( m => m.StorePageModule)
       },
+      // 홈에서 탭들로 이동할 수 있도록 자식으로 설정
+
       {
         path: '',
         redirectTo: 'home/home-tab',
         pathMatch: 'full'
       }
+      //기본 탭을 home-tab으로 설정 
     ]
   },   
   {
     path: '',
     redirectTo: 'home/home-tab',
     pathMatch: 'full'
-  }
+  } //기본 탭을 home-tab으로 설정 
 ];
 
 @NgModule({

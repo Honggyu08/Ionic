@@ -16,5 +16,5 @@ export class SkinSurveyPage implements OnInit {
   goSkinSurvey2() {
     this.router.navigate(['/skinnn-survey2']);
   }
-
+  //두 번째 피부 기초 설문 페이지로 이동하는 함수
 }

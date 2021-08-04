@@ -3,21 +3,25 @@
 
     .userinfo {
         height: 30%;
+        //프로필에 사용할 높이를 전체의 30%로 지정
 
         .profile {
             width: 50%;
-            height: 80%;
+            height: 80%;  //30% 중 80% 사용
             margin: 0 auto;
-        }
+        } //사용자의 프로필 사진 크기 조정
     
         .photo {
             height: 20%;
+            //30% 중 나머지 20% 사용
 
             .bluetooth {
                 margin-right: 1%;
+                // 위치 조정을 위해 버튼의 margin 조정
             }
         }
         
         border-bottom: 1px solid black;
+        //구분선을 위해 블럭의 아랫부분에만 경계선 표시
     }
 }

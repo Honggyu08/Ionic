@@ -1,8 +1,13 @@
+<!-- 기초 설문 페이지 -->
+<!-- 성별, 연령, 추천 경로를 입력 받음 -->
+
 <ion-header>
   <ion-toolbar>
     <div class="toolbar">
       <div><img src="assets/logo.png" alt="logo" class="logo"></div>
+      <!-- 화면 좌측 상단에 브랜드 로고 삽입 -->
       <div class="name">기초 설문</div>
+      <!-- 화면 우측 상단에 페이지명 삽입 -->
     </div>
   </ion-toolbar>
 </ion-header>
@@ -10,6 +15,7 @@
 <ion-content>
   <div class="container">
     <ion-list>
+      <!-- 클릭 시 남성, 여성을 선택할 수 있도록 선택자가 나옴 -->
       <ion-item>
         <ion-label>성별</ion-label>
         <ion-select>
@@ -18,6 +24,7 @@
         </ion-select>
       </ion-item>
 
+      <!-- 클릭 시 연령을 선택하는 선택자가 나옴 -->
       <ion-item>
         <ion-label>연령</ion-label>
         <ion-select value="1998">
@@ -97,6 +104,8 @@
           <ion-select-option value="2013">2013</ion-select-option>
         </ion-select>
       </ion-item>
+
+      <!-- 클릭 시 추천 경로를 선택하는 선택자가 나옴 -->
       <ion-item>
         <ion-label>경로</ion-label>
         <ion-select interface="popover">
@@ -108,5 +117,6 @@
     </ion-list>
   </div>
 
+  <!-- 다음 페이지로 이동할 수 있는 버튼 -->
   <div class="button"><ion-button class="buttonIn" (click)="goSkinSurvey()" slot="ion-button" color="dark">NEXT</ion-button></div>
 </ion-content>

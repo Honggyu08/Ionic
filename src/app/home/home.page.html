@@ -1,13 +1,17 @@
+<!-- 메인 화면 -->
+
 <ion-menu side="start" menuId="category" contentId="main">
   <ion-header>
     <ion-toolbar>
       <ion-title>Menu</ion-title>
+      <!-- 화면 상단에 메뉴 표기 -->
     </ion-toolbar>
   </ion-header>
 
   <ion-content>
     <div class="signcontainer">
       <div class="sign">
+        <!-- 버튼 정렬을 위한 박스 -->
         <ion-button class="signIn" size="small" color="medium">
           로그인
         </ion-button>
@@ -19,25 +23,27 @@
     
     <div>
       <div class="buttonContainer">
-        <ion-button class="menubutton myPage" (click)="myPage()" size="small" color="translucent">
+        <!-- 버튼 정렬을 위한 박스 -->
+        <ion-button class="menubutton myPage" (click)="myPage()" size="small" fill="clear">
           <ion-icon name="person-outline"></ion-icon>MY PAGE
         </ion-button>
-        <ion-button class="menubutton order" size="small" color="translucent">
+        <ion-button class="menubutton order" size="small" fill="clear">
           <ion-icon name="cart-outline"></ion-icon>ORDER
         </ion-button>
-        <ion-button class="menubutton cart" size="small" color="translucent">
+        <ion-button class="menubutton cart" size="small" fill="clear">
           <ion-icon name="cart-outline"></ion-icon>CART
         </ion-button>
       </div>
     </div>
   
     <div>
-      <ion-button class="menubutton manage" expand="block" color="translucent">
+      <ion-button class="menubutton manage" expand="block" fill="clear">
         <ion-icon name="flask-outline"></ion-icon>조제관리사/뷰티전문가 등록하기
       </ion-button>
     </div>
 
     <ion-list>
+      <!-- 메뉴 안에 있는 리스트 -->
       <ion-item class="menuitem" (click)="goPage()">
         NOTICE
       </ion-item>
@@ -59,6 +65,7 @@
     </ion-list>
     <!-- 각 공지, 이벤트, 리뷰, 뉴, 베스트, 질문 페이지 만들어서 (click)=""으로 연결 -->
     <div class="note">
+      <!-- 정보글 삽입 -->
       <ion-note color="dark"> CS INFO<br>
         OPEN 월요일 ~ 금요일<br>
         상담 오전 09:00 ~ 오후 17:00<br>
@@ -77,19 +84,19 @@
       <ion-button slot="start" color="translucent">
         <ion-menu-button color="dark"></ion-menu-button>
       </ion-button>
-      
+      <!-- 가장 좌측 메뉴 버튼 -->
       <ion-title>
         <div class="title">88 MADE</div>
       </ion-title>
-
+      <!-- 앱 타이틀 -->
       <ion-button slot="end" color="translucent">
         <ion-icon name="search-outline" color="dark"></ion-icon>
       </ion-button>
-
+      <!-- 검색 버튼 -->
       <ion-button slot="end" color="translucent">
         <ion-icon name="cart-outline" color="dark"></ion-icon>
       </ion-button>
-    
+      <!-- 장바구니 버튼 -->
     </ion-toolbar>
   </ion-header>
   
@@ -98,6 +105,7 @@
   </ion-content>
 
   <ion-tabs>
+    <!-- 화면 하단의 탭 -->
     <ion-tab-bar slot="bottom">
       <ion-tab-button tab="ideas">
         <ion-icon name="bulb-outline"></ion-icon>

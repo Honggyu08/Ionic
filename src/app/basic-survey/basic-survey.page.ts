@@ -15,6 +15,6 @@ export class BasicSurveyPage implements OnInit {
 
   goSkinSurvey() {
     this.router.navigate(['/skin-survey']);
-  }
+  } //피부설문 첫 번째 페이지로 이동하는 함수
 
 }

@@ -11,6 +11,8 @@ const routes: Routes = [
     redirectTo: 'basic-survey',
     pathMatch: 'full'
   },
+  //기본 주소의 위치를 basic-surey로 지정
+  
   {
     path: 'basic-survey',
     loadChildren: () => import('./basic-survey/basic-survey.module').then( m => m.BasicSurveyPageModule)
@@ -22,7 +24,8 @@ const routes: Routes = [
   {
     path: 'skinnn-survey2',
     loadChildren: () => import('./skinnn-survey2/skinnn-survey2.module').then( m => m.SkinnnSurvey2PageModule)
-  },  {
+  },
+  {
     path: 'my-page',
     loadChildren: () => import('./my-page/my-page.module').then( m => m.MyPagePageModule)
   },

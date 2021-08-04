@@ -1,3 +1,6 @@
+<!-- my page 내부 화면 -->
+<!-- 사용자의 정보를 담고 있는 페이지 -->
+
 <ion-header>
   <ion-toolbar>
     <ion-title>myPage</ion-title>
@@ -8,13 +11,16 @@
   <div class="container" fullscreen>
     <div class="userinfo">
       <div class="profile">
+        <!-- 사용자의 프로필 삽입(나중에 데이터베이스와 연동하여 사용자의 사진이 나오도록 수정) -->
         <img src="./user-in-a-square.png"/>
       </div>
       <div class="photo">
         <ion-toolbar>
+          <!-- 프로필 사진을 바꿀 때 사용할 버튼 -->
           <ion-button slot="start" size="small" color="dark" fill="outline">
             프로필 사진
           </ion-button>
+          <!-- 블루투스를 연동할 때 사용할 버튼 -->
           <ion-button class="bluetooth" (click)="bluetoothPage()" slot="end" size="small" color="dark" fill="outline">
             <ion-icon name="bluetooth-outline"></ion-icon>
           </ion-button>
