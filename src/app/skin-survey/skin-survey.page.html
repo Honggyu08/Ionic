@@ -13,33 +13,15 @@
       <ion-list-header>
         <ion-label>당신의 피부 타입은?</ion-label>
       </ion-list-header>
-  
-      <ion-item>
-        <ion-label>지성</ion-label>
-        <ion-radio slot="start" value="aa"></ion-radio>
-      </ion-item>
-  
-      <ion-item>
-        <ion-label>중성</ion-label>
-        <ion-radio slot="start" value="bb"></ion-radio>
-      </ion-item>
-  
-      <ion-item>
-        <ion-label>건성</ion-label>
-        <ion-radio slot="start" value="cc"></ion-radio>
-      </ion-item>
-
-      <ion-item>
-        <ion-label>민감성</ion-label>
-        <ion-radio slot="start" value="dd"></ion-radio>
-      </ion-item>
-
-      <ion-item>
-        <ion-label>복합성</ion-label>
-        <ion-radio slot="start" value="ee"></ion-radio>
-      </ion-item>
     </ion-radio-group>
   </ion-list>
 
-  <div class="button"><ion-button class="buttonIn" (click)="goSkinSurvey2()" slot="ion-button" expand="block" color="dark">NEXT</ion-button></div>
+  <div class="circle"></div>
+  <input type="radio" name="type" id="oilly"><label for="oilly" class="oil">지성</label>
+  <input type="radio" name="type" id="neutral"><label for="neutral" class="neut">중성</label>
+  <input type="radio" name="type" id="dry"><label for="dry" class="dryskin">건성</label>
+  <input type="radio" name="type" id="complex"><label for="complex" class="com">복합성</label>
+  <input type="radio" name="type" id="sensitive"><label for="sensitive" class="sens">민감성</label>
+
+  <ion-button id="nextButton" (click)="goSkinSurvey2()" color="dark">NEXT</ion-button>
 </ion-content>
