@@ -13,4 +13,12 @@ export class HomePage {
   goPage() {
     this.router.navigate(['/basic-survey']);
   }
+
+  goSignin() {
+    this.router.navigate(['/signin']);
+  }
+
+  goSignup() {
+    this.router.navigate(['/signup']);
+  }
 }

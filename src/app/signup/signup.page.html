@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>회원가입</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-input inputmode="text" required="true" placeholder="성명"></ion-input>
+    </ion-item> <br>
+    <ion-item>
+      <ion-input inputmode="text" required="true" placeholder="아이디"></ion-input>
+    </ion-item> <br>
+    <ion-item>
+      <ion-input inputmode="text" type="password" required="true" minlength="8" placeholder="비밀번호"></ion-input>
+    </ion-item> <br>
+    <ion-item>
+      <ion-input inputmode="text" type="password" required="true" placeholder="비밀번호 확인"></ion-input>
+    </ion-item> <br>
+    <ion-item>
+      <ion-segment value="gender">
+        <ion-segment-button value="male">
+          <ion-label>남성</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="female">
+          <ion-label>여성</ion-label>
+        </ion-segment-button>
+      </ion-segment>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">,<h1>주소</h1></ion-label>
+      <ion-input placeholder="우편 번호"></ion-input>
+      <ion-input placeholder="시, 도"></ion-input>
+      <ion-input placeholder="시, 군, 구"></ion-input>
+      <ion-input placeholder="도로명"></ion-input>
+      <ion-input placeholder="상세 주소"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <ion-button class="signup" expand="block" color="dark">가입하기</ion-button>
+</ion-content>

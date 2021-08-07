@@ -30,8 +30,8 @@
     font-weight: bold;
   }
 
-  .menuitem:hover{
-    box-shadow: 2px 4px 4px black;
+  .menuitem:active {
+    opacity: 0.6;
   }
 
   .menubutton {
@@ -39,7 +39,11 @@
 
     .manage {
       @extend %m0auto;
-    };
+    }
+
+    &:active {
+      opacity: 0.7;
+    }
   }
 
   .note {
@@ -58,10 +62,36 @@
 
     .signIn {
       width: 45%;
+
+      &:active {
+        opacity: 0.7;
+      }
     }
   
     .signUp {
       width: 45%;
+
+      &:active {
+        opacity: 0.7;
+      }
+    }
+
+    .menu {
+      &:active {
+        opacity: 0.7;
+      }
+    }
+
+    .search {
+      &:active {
+        opacity: 0.7;
+      }
+    }
+
+    .cart {
+      &:active {
+        opacity: 0.7;
+      }
     }
   }
 
