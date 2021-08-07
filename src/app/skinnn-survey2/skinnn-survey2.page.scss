@@ -34,9 +34,9 @@
     border-radius: 50%;
     border: 1px solid black;
     position: absolute;
-    width: 50%;
+    width: 187.6px;
     height: 0;
-    padding-bottom: 50%;
+    padding-bottom: 187.6px;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -80%);
@@ -47,9 +47,9 @@ input {
 }
 
 label {
-    width: 21.33%;
-    height: 7.53%;
-    line-height: 44.8px;
+    width: 80.03px;
+    height: 44.81px;
+    line-height: 44.81px;
     border-radius: 10px;
     margin-top: 4px;
     margin-bottom: 4px;
@@ -68,7 +68,7 @@ input:checked + label {
     color: white;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -190%);
+    transform: translate(-50%, -180%);
 }
 
 .drie {
