@@ -1,0 +1,41 @@
+.login {
+    border: none;
+    width: 375px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    .loginBox {
+        border: none;
+        
+    
+        .signIn {
+            &:active {
+                opacity: 0.7;
+            }
+        }
+    
+        .container {
+            display: flex;
+    
+            .info {
+                width: 60%;
+            }
+            .loginbutton {
+                display: inline-block;
+                width: 40%;
+                height: 100%;
+    
+                .signIn {
+                    width: 100%;
+                    height: 80px;
+                }
+            }
+        }
+    }
+    
+    .find {
+        font-size: 70%;
+    }
+}
