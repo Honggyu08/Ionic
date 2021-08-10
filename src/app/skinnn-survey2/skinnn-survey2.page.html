@@ -19,34 +19,17 @@
       <ion-list-header>
         <ion-label>평소 피부 고민은?</ion-label>
       </ion-list-header>
-
-      <ion-item>
-        <ion-label>건조</ion-label>
-        <ion-radio slot="start" value="a"></ion-radio>
-      </ion-item>
-    
-      <ion-item>
-        <ion-label>미백</ion-label>
-        <ion-radio slot="start" value="b"></ion-radio>
-      </ion-item>
-      
-      <ion-item>
-        <ion-label>주름</ion-label>
-        <ion-radio slot="start" value="c"></ion-radio>
-      </ion-item>
-  
-      <ion-item>
-        <ion-label>홍조</ion-label>
-        <ion-radio slot="start" value="d"></ion-radio>
-      </ion-item>
-  
-      <ion-item>
-        <ion-label>트러블</ion-label>
-        <ion-radio slot="start" value="e"></ion-radio>
-      </ion-item>
     </ion-radio-group>
   </ion-list>
 
+
+  <div class="circle"></div>
+  <input type="radio" name="consider" id="dried"><label for="dried" class="drie">건조</label>
+  <input type="radio" name="consider" id="bright"><label for="bright" class="brigh">미백</label>
+  <input type="radio" name="consider" id="wrinkle"><label for="wrinkle" class="wrinkl">주름</label>
+  <input type="radio" name="consider" id="blush"><label for="blush" class="blus">홍조</label>
+  <input type="radio" name="consider" id="trouble"><label for="trouble" class="troubl">트러블</label>
+
   <!-- 다음 페이지로 넘어가는 버튼 -->
-  <div class="button"><ion-button class="buttonIn" (click)="goHome()" slot="ion-button" expand="block" color="dark">FINISH</ion-button></div>
+  <ion-button class="homeButton" (click)="goHome()" color="dark">FINISH</ion-button>
 </ion-content>

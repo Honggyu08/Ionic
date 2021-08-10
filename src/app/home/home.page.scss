@@ -28,15 +28,26 @@
 
   .menuitem {
     font-weight: bold;
+
+  }
+
+  .menuitem:active {
+    opacity: 0.6;
   } //메뉴 안 리스트들 폰트 볼드
+
 
   .menubutton {
     color: black;
     // 메뉴 버튼의 폰트 색 지정
     .manage {
       @extend %m0auto;
+
+    }
+
+    &:active {
+      opacity: 0.7;
     } // 버튼 위치 조정
-  }
+  } 
 
   .note {
     color: black;
@@ -54,10 +65,36 @@
 
     .signIn {
       width: 45%;
+
+      &:active {
+        opacity: 0.7;
+      }
     }
   
     .signUp {
       width: 45%;
+
+      &:active {
+        opacity: 0.7;
+      }
+    }
+
+    .menu {
+      &:active {
+        opacity: 0.7;
+      }
+    }
+
+    .search {
+      &:active {
+        opacity: 0.7;
+      }
+    }
+
+    .cart {
+      &:active {
+        opacity: 0.7;
+      }
     }
     //로그인, 회원가입 버튼 크기를 45%로 지정
   }

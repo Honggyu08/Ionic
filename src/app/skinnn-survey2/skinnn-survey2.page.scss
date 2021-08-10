@@ -21,14 +21,96 @@
     margin-top: 40px;
 } //페이지명 폰트 및 위치 조정
 
-.button {
-    @extend %m0auto;
-    position: relative;
-    top: 20%;
+.homeButton {
+    position: absolute;
     width: 80%;
-    .buttonIn {
-        width: 100%;
-    }
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 227.5%);
+
+    &:active {
+        opacity: 0.7;
+      }
 } //다음 페이지로 넘어가는 버튼의 크기, 위치 조정
 
-%m0auto { margin: 0 auto; }
+.circle {
+    background-color: transparent;
+    border-radius: 50%;
+    border: 1px solid black;
+    position: absolute;
+    width: 187.6px;
+    height: 0;
+    padding-bottom: 187.6px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -80%);
+}
+
+input {
+    position: absolute; left: -1000%;
+}
+
+label {
+    width: 80.03px;
+    height: 44.81px;
+    line-height: 44.81px;
+    border-radius: 10px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    margin-left: 2px;
+    margin-right: 2px;
+    text-align: center;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    font-weight: bold;
+    
+}
+
+input:checked + label {
+    background-color: black;
+    color: white;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -180%);
+}
+
+.drie {
+    position: absolute;
+    display: inline-block;
+    left: 50%;
+    top: 50%;
+    transform: translate(-155%, -240%)
+}
+
+.brigh {
+    position: absolute;
+    display: inline-block;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -380%)
+}
+
+.wrinkl {
+    position: absolute;
+    display: inline-block;
+    left: 50%;
+    top: 50%;
+    transform: translate(55%, -240%)
+}
+
+.blus {
+    position: absolute;
+    display: inline-block;
+    left: 50%;
+    top: 50%;
+    transform: translate(-130%, -40%)
+}
+
+.troubl {
+    position: absolute;
+    display: inline-block;
+    left: 50%;
+    top: 50%;
+    transform: translate(30%, -40%)
+}

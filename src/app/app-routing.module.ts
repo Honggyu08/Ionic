@@ -11,8 +11,7 @@ const routes: Routes = [
     redirectTo: 'basic-survey',
     pathMatch: 'full'
   },
-  //기본 주소의 위치를 basic-surey로 지정
-  
+    //기본 주소의 위치를 basic-surey로 지정
   {
     path: 'basic-survey',
     loadChildren: () => import('./basic-survey/basic-survey.module').then( m => m.BasicSurveyPageModule)
@@ -26,6 +25,14 @@ const routes: Routes = [
     loadChildren: () => import('./skinnn-survey2/skinnn-survey2.module').then( m => m.SkinnnSurvey2PageModule)
   },
   {
+    path: 'signin',
+    loadChildren: () => import('./signin/signin.module').then( m => m.SigninPageModule)
+  },
+  {
+    path: 'signup',
+    loadChildren: () => import('./signup/signup.module').then( m => m.SignupPageModule)
+  },
+  {
     path: 'my-page',
     loadChildren: () => import('./my-page/my-page.module').then( m => m.MyPagePageModule)
   },
@@ -33,8 +40,6 @@ const routes: Routes = [
     path: 'bluetooth',
     loadChildren: () => import('./bluetooth/bluetooth.module').then( m => m.BluetoothPageModule)
   },
-
-
 ];
 
 @NgModule({

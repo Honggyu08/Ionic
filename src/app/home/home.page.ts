@@ -19,4 +19,13 @@ export class HomePage {
     this.router.navigate(['/my-page']);
   }
   // 클릭시 my-page로 이동하는 함수
+
+  goSignin() {
+    this.router.navigate(['/signin']);
+  }
+  // 클릭시 로그인 페이지로 이동하는 함수
+
+  goSignup() {
+    this.router.navigate(['/signup']);
+  } // 클릭시 회원가입 페이지로 이동하는 함수
 }
