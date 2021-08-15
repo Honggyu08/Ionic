@@ -5,36 +5,45 @@
 </ion-header>
 
 <ion-content>
-  <form class="login" action="" method="post">
-    <fieldset class="loginBox">
-      <ion-list>
-        <div class="container">
-          <div class="info">
-            <ion-input inputmode="text" required="true" placeholder="아이디"></ion-input>
-            <ion-input inputmode="text" type="password" required="true" minlength="8" placeholder="비밀번호"></ion-input>  
-          </div>
-        
-          <div class="loginbutton">
-            <ion-button class="signIn" type="submit" (click)="goHome()" color="dark">로그인</ion-button>
-          </div>
-        </div>
-      </ion-list>
+  <div class="content">
+    <div class="ion-padding">
+      <ion-input placeholder="Email" type="email" style="padding-left:10px !important; font-family:'Nunito', sans-serif;"></ion-input> <br>
+      <ion-input placeholder="Password" type="password" style="padding-left:10px !important; font-family:'Nunito, sans-serif;'"></ion-input>
+    </div>
+  
+    <ion-button class="actionbutton" expand="full" fill="clear" style="text-transform: none;">Sign In</ion-button>
+    
+    <ion-grid>
+      <ion-row>
+        <ion-col size="6">
+          <ion-checkbox checked style="margin-bottom: 7px; margin-left: 8px;">&nbsp;
+            <ion-label style="display: inline-block; vertical-align: top; font-family: 'Nunito', sans-serif;"><p style="font-size:small; margin-bottom: 3px;">Stay Connected</p></ion-label>
+          </ion-checkbox>
+        </ion-col>
+        <ion-col size="6">
+          <ion-button fill="clear" style="font-size:small; color:#a8a8a8; margin-right: 10px; text-transform: none; font-family: 'Nunito', sans-serif;"><p style="font-size: small; margin-bottom: 37.5px">Forgot Password?</p></ion-button>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col class="line" size="5">
+  
+        </ion-col>
+        <ion-col size="2" style="text-align: center;">
+          Or
+        </ion-col>
+        <ion-col class="line" size="5">
+  
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-button class="facebookbtn" expand="full" fill="clear">
+      <b>Facebook</b>
+    </ion-button>
+    <ion-button class="googlebtn" expand="full" fill="clear">
+      <b>Google</b>
+    </ion-button>
+  </div>
 
-      <ion-item lines="none">
-        <ion-checkbox color="dark" checked slot="start" checked="true"></ion-checkbox>
-        <ion-label for="idSave">ID 저장</ion-label>
-      </ion-item>
-      
-      
-      <ul>
-        <p class="find">
-          아이디를 잊으셨나요?  <a href="#a">아이디 찾기</a><br>
-          비밀번호를 잊으셨나요?  <a href="#a">비밀번호 찾기</a>
-        </p>
-      </ul>
+  <!-- 간편 로그인 연결 방법 알아보기 -->
 
-    </fieldset>
-  </form>
-
-  <!-- 간편 로그인 만들기 -->
 </ion-content>
