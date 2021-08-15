@@ -1,8 +1,7 @@
 .content {
     position: absolute;
     left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 20%);
 }
 
 .signup-text {
@@ -25,7 +24,7 @@ ion-input{
     background-color: #ededed;
     border-radius: 5px;
     font-size: small;
-    width: 250px;
+    width: 300px;
 }
 
 .actionbutton {
