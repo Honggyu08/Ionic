@@ -8,25 +8,91 @@
 </ion-header>
 
 <ion-content>
-  <div class="container" fullscreen>
-    <div class="userinfo">
-      <div class="profile">
-        <!-- 사용자의 프로필 삽입(나중에 데이터베이스와 연동하여 사용자의 사진이 나오도록 수정) -->
+  <div class="container">
+    <ion-grid>
+      <ion-row class="photo">
         <img src="./user-in-a-square.png"/>
-      </div>
-      <div class="photo">
-        <ion-toolbar>
-          <!-- 프로필 사진을 바꿀 때 사용할 버튼 -->
-          <ion-button slot="start" size="small" color="dark" fill="outline">
-            프로필 사진
-          </ion-button>
-          <!-- 블루투스를 연동할 때 사용할 버튼 -->
-          <ion-button class="bluetooth" (click)="bluetoothPage()" slot="end" size="small" color="dark" fill="outline">
-            <ion-icon name="bluetooth-outline"></ion-icon>
-          </ion-button>
-        </ion-toolbar>
-      </div>
-      
-    </div>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <div class="nickName">
+            닉네임
+          </div>
+        </ion-col>
+        <ion-col>
+          <div class="age">
+            20대
+          </div>
+        </ion-col>
+        <ion-col>
+          <div class="type">
+            TYPE
+          </div>
+        </ion-col>
+        <ion-col>
+          <ion-toolbar>
+            <ion-button slot="end" class="profilebtn" fill="clear" color="dark">
+              <ion-icon class="profileSet" name="clipboard-outline"></ion-icon>
+            </ion-button>
+          </ion-toolbar>
+        </ion-col>
+      </ion-row>
+      <ion-row class="line">
+
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <div style="text-align: center;">
+            내 리뷰 
+          </div>
+        </ion-col>
+        <ion-col>
+          <div style="text-align: center;">
+            내 아이디어 
+          </div>
+        </ion-col>
+        <ion-col>
+          <diV style="text-align: center;">
+            내 다이어리 
+          </diV>
+        </ion-col>
+      </ion-row>
+      <ion-row class="line">
+
+      </ion-row>
+      <ion-row class="pointRow">
+        <ion-icon class="pointIcon" name="cash-outline"></ion-icon>
+        <div class="point">
+          88 포인트
+        </div>
+        <div class="pointAmt">
+          0
+        </div>
+        <div class="pointUnit">
+          P
+        </div>
+      </ion-row>
+      <ion-row class="line">
+
+      </ion-row>
+      <ion-row>
+        <ion-icon class="deliver" name="rocket-outline"></ion-icon>
+        <div style="display: inline-block; font-weight: bold; font-size: 20px; margin-left: 20px; margin-top: 19px; margin-bottom: 19px; height: 22px;">
+          구매목록/배송조회
+        </div>
+        <div style="color: red; font-size: 30px; margin-top: 10px; margin-bottom: 10px; margin-left: 65px">
+          2
+        </div>
+      </ion-row>
+      <ion-row>
+        <ion-icon class="refund" name="reload-outline"></ion-icon>
+        <div style="display: inline-block; font-weight: bold; font-size: 20px; margin-left: 20px; margin-top: 19px; margin-bottom: 19px; height: 22px;">
+          취소/반품조회
+        </div>
+        <div style="color: red; font-size: 30px; margin-top: 10px; margin-bottom: 10px; margin-left: 104.5px">
+          0
+        </div>
+      </ion-row>
+    </ion-grid>
   </div>
 </ion-content>

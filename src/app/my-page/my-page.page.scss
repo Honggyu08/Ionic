@@ -1,27 +1,103 @@
 .container {
-    height: 100vh;
-
-    .userinfo {
-        height: 30%;
-        //프로필에 사용할 높이를 전체의 30%로 지정
-
-        .profile {
-            width: 50%;
-            height: 80%;  //30% 중 80% 사용
-            margin: 0 auto;
-        } //사용자의 프로필 사진 크기 조정
+    width: 375px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     
-        .photo {
-            height: 20%;
-            //30% 중 나머지 20% 사용
-
-            .bluetooth {
-                margin-right: 1%;
-                // 위치 조정을 위해 버튼의 margin 조정
-            }
+    .photo {
+        img {
+            width: 90px;
+            height: 90px;
+            margin: 0 auto;
         }
-        
+    }
+    
+    .nickName {
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 11.2px;
+        text-align: center;
+    }
+
+    .age {
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 11.2px;
+        text-align: center
+    }
+
+    .type {
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 11.2px;
+        text-align: center
+    }
+
+    .manager {
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 11.2px;
+        text-align: center
+    }
+
+    .profilebtn {
+        height: 26px;
+
+        .profileSet {
+            width: 23.8px;
+            height: 23.8px;
+        }
+    }
+    
+    .line {
         border-bottom: 1px solid black;
-        //구분선을 위해 블럭의 아랫부분에만 경계선 표시
+    }
+
+
+    .pointIcon {
+        width: 40px;
+        height: 40px;
+        margin-top: 12px;
+        margin-bottom: 10px;
+    }
+    .point {
+        display: inline-block;
+        font-weight: bold;
+        font-size: 30px;
+        margin-left: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .pointAmt {
+        display: inline-block;
+        color:  skyblue;
+        font-size: 30px;
+        margin-left: 99px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .pointUnit {
+        display: inline-block;
+        font-size: 30px;
+        font-weight: bold;
+        margin-left: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .deliver {
+        width: 40px;
+        height: 40px;
+        margin-top: 12px;
+        margin-bottom: 10px;
+    }
+
+    .refund {
+        width: 40px;
+        height: 40px;
+        margin-top: 12px;
+        margin-bottom: 10px;
     }
 }

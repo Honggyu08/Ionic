@@ -1,3 +1,13 @@
+.container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+ion-input {
+    width: 300px;
+}
+
 .signup {
     &:active {
         opacity: 0.7;
