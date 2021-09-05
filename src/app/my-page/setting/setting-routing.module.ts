@@ -6,8 +6,30 @@ import { SettingPage } from './setting.page';
 const routes: Routes = [
   {
     path: '',
-    component: SettingPage
-  }
+    component: SettingPage,
+    children: [
+      {
+        path: 'privacy',
+        loadChildren: () => import('./privacy/privacy.module').then( m => m.PrivacyPageModule)
+      },
+      {
+        path: 'notification',
+        loadChildren: () => import('./notification/notification.module').then( m => m.NotificationPageModule)
+      },
+      {
+        path: 'faq',
+        loadChildren: () => import('./faq/faq.module').then( m => m.FAQPageModule)
+      },
+      {
+        path: 'policy',
+        loadChildren: () => import('./policy/policy.module').then( m => m.PolicyPageModule)
+      },
+      {
+        path: 'sign-out',
+        loadChildren: () => import('./sign-out/sign-out.module').then( m => m.SignOutPageModule)
+      }
+    ]
+  },
 ];
 
 @NgModule({

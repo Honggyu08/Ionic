@@ -36,10 +36,6 @@ const routes: Routes = [
     path: 'my-page',
     loadChildren: () => import('./my-page/my-page.module').then( m => m.MyPagePageModule)
   },
-  {
-    path: 'bluetooth',
-    loadChildren: () => import('./bluetooth/bluetooth.module').then( m => m.BluetoothPageModule)
-  },
 ];
 
 @NgModule({

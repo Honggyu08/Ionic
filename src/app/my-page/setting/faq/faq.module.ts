@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { BluetoothPageRoutingModule } from './bluetooth-routing.module';
+import { FAQPageRoutingModule } from './faq-routing.module';
 
-import { BluetoothPage } from './bluetooth.page';
+import { FAQPage } from './faq.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    BluetoothPageRoutingModule
+    FAQPageRoutingModule
   ],
-  declarations: [BluetoothPage]
+  declarations: [FAQPage]
 })
-export class BluetoothPageModule {}
+export class FAQPageModule {}
