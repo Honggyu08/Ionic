@@ -16,4 +16,8 @@ export class MyPagePage implements OnInit {
   bluetoothPage() {
     this.router.navigate(['/bluetooth']);
   }
+
+  goSetting() {
+    this.router.navigate(['/my-page/setting']);
+  }
 }

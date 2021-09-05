@@ -4,6 +4,10 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>myPage</ion-title>
+    <!-- 설정 버튼: 개인정보, 블루투스 연결, 알림, 로그아웃, FAQ, 이용약관 -->
+    <ion-button class="setting" (click)="goSetting()" slot="end" fill="clear" size="small">
+      <ion-icon name="settings-outline" style="color: black;"></ion-icon>
+    </ion-button>
   </ion-toolbar>
 </ion-header>
 
@@ -57,6 +61,7 @@
           </diV>
         </ion-col>
       </ion-row>
+      <!-- 옆에 숫자 데이터 연동해서 표기하고 하이퍼링크 -->
       <ion-row class="line">
 
       </ion-row>
@@ -80,7 +85,7 @@
         <div style="display: inline-block; font-weight: bold; font-size: 20px; margin-left: 20px; margin-top: 19px; margin-bottom: 19px; height: 22px;">
           구매목록/배송조회
         </div>
-        <div style="color: red; font-size: 30px; margin-top: 10px; margin-bottom: 10px; margin-left: 65px">
+        <div style="color: red; font-size: 30px; margin-top: 10px; margin-bottom: 10px; margin-left: 66px">
           2
         </div>
       </ion-row>
@@ -89,10 +94,11 @@
         <div style="display: inline-block; font-weight: bold; font-size: 20px; margin-left: 20px; margin-top: 19px; margin-bottom: 19px; height: 22px;">
           취소/반품조회
         </div>
-        <div style="color: red; font-size: 30px; margin-top: 10px; margin-bottom: 10px; margin-left: 104.5px">
+        <div style="color: red; font-size: 30px; margin-top: 10px; margin-bottom: 10px; margin-left: 106px">
           0
         </div>
       </ion-row>
+      <!--조회 항목 하이퍼링크 걸기 -->
     </ion-grid>
   </div>
 </ion-content>

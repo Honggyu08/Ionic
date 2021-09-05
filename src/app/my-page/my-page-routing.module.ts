@@ -7,7 +7,11 @@ const routes: Routes = [
   {
     path: '',
     component: MyPagePage
+  },  {
+    path: 'setting',
+    loadChildren: () => import('./setting/setting.module').then( m => m.SettingPageModule)
   }
+
 ];
 
 @NgModule({
