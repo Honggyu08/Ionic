@@ -2,5 +2,68 @@
 </ion-header>
 
 <ion-content>
-  <h1>개인정보</h1>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="3.8">
+        이메일/아이디
+      </ion-col>
+      <ion-col style="text-decoration: underline;">
+        abcd1234@gmail.com
+        <ion-button class="signOut" color="medium" size="small">
+          로그아웃
+        </ion-button>
+        <!--데이터 연동, 로그아웃 기능-->
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="3.8">
+        비밀번호
+      </ion-col>
+      <ion-col style="text-decoration: underline;">
+        <ion-button class="changePass" color="medium" size="small">
+          비밀번호 변경
+        </ion-button>
+        <!-- (click)으로 할지 다른 팝업 기능있는지 찾아보고 링크 -->
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="3.8">
+        이름
+      </ion-col>
+      <ion-col style="text-decoration: underline;">
+        홍길동
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="3.8">
+        연락처
+      </ion-col>
+      <ion-col style="text-decoration: underline;">
+        01077777777
+        <ion-button class="changePhone" color="medium" size="small">
+          전화번호 변경
+        </ion-button>
+        <!-- 데이터 연동해서 표시 -->
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="3.8">
+        주소
+      </ion-col>
+      <ion-col style="text-decoration: underline;">
+        <!--주소 찾기 기능 알아보기-->
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <a href="" style="text-decoration: underline; color: red;">탈퇴하기</a>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-button class="save" color="medium">
+        저장
+        <!-- 데이터 저장하는 법 알아보고 적용 -->
+      </ion-button>
+    </ion-row>
+  </ion-grid>
 </ion-content>

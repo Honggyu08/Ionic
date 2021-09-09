@@ -25,10 +25,6 @@ const routes: Routes = [
         loadChildren: () => import('./policy/policy.module').then( m => m.PolicyPageModule)
       },
       {
-        path: 'sign-out',
-        loadChildren: () => import('./sign-out/sign-out.module').then( m => m.SignOutPageModule)
-      },
-      {
         path: 'bluetooth',
         loadChildren: () => import('./bluetooth/bluetooth.module').then( m => m.BluetoothPageModule)
       }
