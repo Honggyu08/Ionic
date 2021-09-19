@@ -13,11 +13,11 @@ export class MyPagePage implements OnInit {
   ngOnInit() {
   }
 
-  bluetoothPage() {
-    this.router.navigate(['/bluetooth']);
-  }
-
   goSetting() {
     this.router.navigate(['/my-page/setting']);
+  }
+
+  goProfile() {
+    this.router.navigate(['/my-page/profile']);
   }
 }

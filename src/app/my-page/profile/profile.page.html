@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="my-page"></ion-back-button>
+    </ion-buttons>
+    <ion-title class="title">profile</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <img class="photo" src="./user-in-a-square.svg"/>
+    </ion-row>
+    <ion-row class="line">
+    </ion-row>
+    <ion-row>
+      <ion-col size="3.8" style="transform: translateY(12.5%);">
+        프로필 사진
+      </ion-col>
+      <ion-col>
+        <ion-button class="changePhoto" size="small" color="medium">
+          프로필 사진 수정
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

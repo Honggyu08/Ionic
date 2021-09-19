@@ -2,5 +2,22 @@
 </ion-header>
 
 <ion-content>
-  <h1>알림설정</h1>
+  <h1 style="padding-left: 10px;">알림설정</h1>
+  <ion-list>
+    <ion-item lines="none">
+      <ion-label>신제품 알림</ion-label>
+      <ion-toggle [(ngModel)]="newProductNotif"></ion-toggle>
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-label>이벤트 알림</ion-label>
+      <ion-toggle [(ngModel)]="eventNotif"></ion-toggle>
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-label>사용자 리뷰 알림</ion-label>
+      <ion-toggle [(ngModel)]="reviewNotif"></ion-toggle>
+    </ion-item>
+  </ion-list>
+  
 </ion-content>

@@ -56,11 +56,13 @@
     </ion-row>
     <ion-row>
       <ion-col>
-        <a href="" style="text-decoration: underline; color: red;">탈퇴하기</a>
+        <a (click)="withdrawClick()" style="text-decoration: underline; color: red;">
+          탈퇴하기
+        </a>
       </ion-col>
     </ion-row>
     <ion-row>
-      <ion-button class="save" color="medium">
+      <ion-button class="save" color="medium" (click)="saveButtonClick()">
         저장
         <!-- 데이터 저장하는 법 알아보고 적용 -->
       </ion-button>
