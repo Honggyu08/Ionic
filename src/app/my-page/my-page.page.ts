@@ -20,4 +20,28 @@ export class MyPagePage implements OnInit {
   goProfile() {
     this.router.navigate(['/my-page/profile']);
   }
+
+  reviewClick() {
+    this.router.navigate(['/my-page/my-reviews/review']);
+  }
+
+  ideaClick() {
+    this.router.navigate(['/my-page/my-reviews/idea']);
+  }
+
+  diaryClick() {
+    this.router.navigate(['/my-page/my-reviews/diary']);
+  }
+
+  pointClick() {
+    this.router.navigate(['/my-page/points']);
+  }
+
+  purchaseClick() {
+    this.router.navigate(['/my-page/purchase']);
+  }
+
+  refundClick() {
+    this.router.navigate(['/my-page/refund']);
+  }
 }

@@ -21,6 +21,12 @@
     border-bottom: 1px solid black;
 }
 
+.save {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 ion-back-button {
     color: black;
 }
