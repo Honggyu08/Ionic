@@ -3,6 +3,9 @@
 
 <ion-header>
   <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
     <ion-title class="title">myPage</ion-title>
     <!-- 설정 버튼: 개인정보, 블루투스 연결, 알림, 로그아웃, FAQ, 이용약관 -->
     <ion-button class="setting" (click)="goSetting()" slot="end" fill="clear" size="small">

@@ -36,6 +36,42 @@ const routes: Routes = [
     path: 'my-page',
     loadChildren: () => import('./my-page/my-page.module').then( m => m.MyPagePageModule)
   },
+  {
+    path: 'notice',
+    loadChildren: () => import('./notice/notice.module').then( m => m.NoticePageModule)
+  },
+  {
+    path: 'event',
+    loadChildren: () => import('./event/event.module').then( m => m.EventPageModule)
+  },
+  {
+    path: 'review',
+    loadChildren: () => import('./review/review.module').then( m => m.ReviewPageModule)
+  },
+  {
+    path: 'new',
+    loadChildren: () => import('./new/new.module').then( m => m.NewPageModule)
+  },
+  {
+    path: 'best',
+    loadChildren: () => import('./best/best.module').then( m => m.BestPageModule)
+  },
+  {
+    path: 'qn-a',
+    loadChildren: () => import('./qn-a/qn-a.module').then( m => m.QnAPageModule)
+  },
+  {
+    path: 'order',
+    loadChildren: () => import('./order/order.module').then( m => m.OrderPageModule)
+  },
+  {
+    path: 'cart',
+    loadChildren: () => import('./cart/cart.module').then( m => m.CartPageModule)
+  },
+  {
+    path: 'expert',
+    loadChildren: () => import('./expert/expert.module').then( m => m.ExpertPageModule)
+  },
 ];
 
 @NgModule({

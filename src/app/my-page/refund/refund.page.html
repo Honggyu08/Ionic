@@ -8,5 +8,29 @@
 </ion-header>
 
 <ion-content>
+  <ion-tabs>
+    <!-- 데이터 연동하여 표기 -->
+    <ion-tab-bar slot="top">
+      <ion-tab-button tab="refund">
+        <div>2</div>
+        <ion-label>환불</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button tab="refunded">
+        <div>2</div>
+        <ion-label>환불완료</ion-label>
+      </ion-tab-button>
 
+      <ion-tab-button tab="cancel">
+        <div>1</div>
+        <ion-label>취소</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button tab="cancled">
+        <div>1</div>
+        <ion-label>취소완료</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
 </ion-content>
+<!-- 탭으로 할지 탭을 구현할지 & 탭마다 상세 페이지(목록) -->
