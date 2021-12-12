@@ -6,8 +6,19 @@ import { OrderPage } from './order.page';
 const routes: Routes = [
   {
     path: '',
-    component: OrderPage
-  }
+    component: OrderPage,
+    children: [
+      {
+        path: 'check',
+        loadChildren: () => import('./check/check.module').then( m => m.CheckPageModule)
+      },
+      {
+        path: 'refund',
+        loadChildren: () => import('./refund/refund.module').then( m => m.RefundPageModule)
+      }
+    ]
+  },
+
 ];
 
 @NgModule({

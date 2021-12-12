@@ -6,8 +6,18 @@ import { CartPage } from './cart.page';
 const routes: Routes = [
   {
     path: '',
-    component: CartPage
-  }
+    component: CartPage,
+    children: [
+      {
+        path: 'heart-list',
+        loadChildren: () => import('./heart-list/heart-list.module').then( m => m.HeartListPageModule)
+      },
+      {
+        path: 'cart-list',
+        loadChildren: () => import('./cart-list/cart-list.module').then( m => m.CartListPageModule)
+      }
+    ]
+  },
 ];
 
 @NgModule({
