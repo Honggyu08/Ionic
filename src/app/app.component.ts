@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { initializeApp } from 'firebase/app';
-import { getAnalytics } from "firebase/analytics";
-import { firebaseConfig } from 'src/environments/environment';
+// import { initializeApp } from 'firebase/app';
+// import { getAnalytics } from "firebase/analytics";
+// import { firebaseConfig } from 'src/environments/environment';
 
 @Component({
   selector: 'app-root',
@@ -10,7 +10,7 @@ import { firebaseConfig } from 'src/environments/environment';
 })
 export class AppComponent {
   constructor() {
-    const app = initializeApp(firebaseConfig);
-    const analytics = getAnalytics(app);
+    // const app = initializeApp(firebaseConfig);
+    // const analytics = getAnalytics(app);
   }
 }
