@@ -8,46 +8,29 @@
 </ion-header>
 
 <ion-content>
-  <div class="progressbox">
-    <ion-grid>
-      <!-- 진행중인 품목 수(데이터 연결해서 불러오기) -->
-      <ion-row>
-        <ion-col style="color: skyblue;">
-          0
-        </ion-col>
-        <ion-col style="color: skyblue;">
-          2
-        </ion-col>
-        <ion-col style="color: skyblue;">
-          1
-        </ion-col>
-        <ion-col style="color: skyblue;">
-          30
-        </ion-col>
-      </ion-row>
-      <ion-row>
-        <ion-col style="font-weight: bold;">
-          <a (click)="goPayment()" style="color: black;">
-            입금/결제
-          </a>
-        </ion-col>
-        <ion-col style="font-weight: bold;">
-          <a (click)="goDelievering()" style="color: black;">
-            배송중
-          </a>
-        </ion-col>
-        <ion-col style="font-weight: bold;">
-          <a (click)="goDelivered()" style="color: black;">
-            배송완료
-          </a>
-        </ion-col>
-        <ion-col style="font-weight: bold;">
-          <a (click)="goConfirm()" style="color: black;">
-            구매확정
-          </a>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
-  </div>
+  <ion-tabs>
+    <!-- 데이터 연동하여 표기 -->
+    <ion-tab-bar slot="top">
+      <ion-tab-button tab="deposit">
+        <div>0</div>
+        <ion-label>입금/결제</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button tab="delivery">
+        <div>2</div>
+        <ion-label>배달중</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="delivered">
+        <div>1</div>
+        <ion-label>배달완료</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button tab="purchased">
+        <div>30</div>
+        <ion-label>구매확정</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
 </ion-content>
 <!-- 탭으로 할지 탭을 구현할지 & 탭마다 상세 페이지(목록) -->

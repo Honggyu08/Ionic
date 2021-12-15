@@ -6,8 +6,26 @@ import { RefundPage } from './refund.page';
 const routes: Routes = [
   {
     path: '',
-    component: RefundPage
-  }
+    component: RefundPage,
+    children: [
+      {
+        path: 'refunding',
+        loadChildren: () => import('./refunding/refunding.module').then( m => m.RefundingPageModule)
+      },
+      {
+        path: 'refunded',
+        loadChildren: () => import('./refunded/refunded.module').then( m => m.RefundedPageModule)
+      },
+      {
+        path: 'cancel',
+        loadChildren: () => import('./cancel/cancel.module').then( m => m.CancelPageModule)
+      },
+      {
+        path: 'canceled',
+        loadChildren: () => import('./canceled/canceled.module').then( m => m.CanceledPageModule)
+      }
+    ]
+  },
 ];
 
 @NgModule({
