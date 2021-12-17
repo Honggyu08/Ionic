@@ -1,6 +1,38 @@
 <ion-header>
 </ion-header>
 
+<!-- 디테일 페이지 생성 후 제목 클릭 시 이동하도록 -->
+<!-- 데이터 베이스 연동 -->
 <ion-content>
-아이디어 목록 만들기
+    <div class="ideaList">
+        <ion-grid>
+            <ion-row>
+                <ion-col style="text-align: center; text-decoration: underline;">
+                    등록한 아이디어 목록
+                </ion-col>
+            </ion-row>
+            <ion-row class="ideas" style="border: 1px solid black;">
+                <ion-col>
+                    <a (click)="goDetail()">제품 이름</a>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+    </div>
+    <div class="progress">
+        <ion-grid>
+            <ion-row>
+                <ion-col style="text-align: center; text-decoration: underline;">
+                    진행상황 및 피드백
+                </ion-col>
+            </ion-row>
+            <ion-row class="ideas" style="border: 1px solid black;">
+                <ion-col style="text-align: center;">
+                    <a (click)="goDetail()">제품 이름</a>
+                </ion-col>
+                <ion-col size="4"style="text-align:center;">
+                    상황
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+    </div>
 </ion-content>

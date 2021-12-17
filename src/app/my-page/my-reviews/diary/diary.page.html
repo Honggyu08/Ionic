@@ -2,5 +2,23 @@
 </ion-header>
 
 <ion-content>
-다이어리 목록 만들기
+    <div class="container">
+        <p style="margin-left: 10px; text-decoration: underline; font-size: large;">나의 피부 다이어리</p>
+        <ion-grid>
+            <ion-row style="border: 1px solid black; width: 90%;">
+                <ion-col>
+                    진단 날짜: 2021/03/21<br>
+                    피부 상태 평균 점수: <span style="color:red;">BAD</span> <br>
+                    <div style="margin: 0 auto; width: inherit; text-align: center;">
+                        <ion-button (click)="goDetail()" color="dark" size="small">
+                            자세히 보기
+                        </ion-button>
+                    </div>        
+                </ion-col>
+            </ion-row>
+
+            <!-- 다이어리 개수만큼 표기, 데이터 베이스 연동하여 표기 -->
+            <!-- 상사페이지 만들기서 연결 -->
+        </ion-grid>
+    </div>
 </ion-content>
