@@ -19,12 +19,12 @@ export class ExpertPage implements OnInit {
       message: '신청하시겠습니까?',
       buttons: [
         {
-          text: '네',
+          text: '아니요',
+          role: 'cancel',
           handler: () => {}
         },
         {
-          text: '아니요',
-          role: 'cancel',
+          text: '네',
           handler: () => {}
         }
       ]
