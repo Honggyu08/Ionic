@@ -38,10 +38,10 @@ export class MyPagePage implements OnInit {
   }
 
   purchaseClick() {
-    this.router.navigate(['/my-page/purchase']);
+    this.router.navigate(['/my-page/purchase/deposit']);
   }
 
   refundClick() {
-    this.router.navigate(['/my-page/refund']);
+    this.router.navigate(['/my-page/refund/refunding']);
   }
 }

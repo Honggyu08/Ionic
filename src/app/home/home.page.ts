@@ -52,11 +52,11 @@ export class HomePage implements OnInit {
   }
 
   goOrder() {
-    this.router.navigate(['/order']);
+    this.router.navigate(['/order/check']);
   }
 
   goCart() {
-    this.router.navigate(['/cart']);
+    this.router.navigate(['/cart/heart-list']);
   }
 
   goExpert() {
