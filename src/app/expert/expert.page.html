@@ -28,7 +28,39 @@
           </div>
         </ion-col>
         <ion-col size="3">
-          <ion-input style="border-bottom: 1px solid black;"></ion-input>
+          <ion-input></ion-input>
+        </ion-col>
+      </ion-row>
+      <ion-row style="margin-top: 20px;">
+        <ion-col style="font-weight: bold;">
+          맞춤형 화장품 조제관리사 등록
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-input placeholder="이름" clearInput></ion-input>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-input placeholder="생년월일(ex.19920818)" clearInput></ion-input>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-input placeholder="자격증번호 입력" clearInput></ion-input>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-input placeholder="문서번호(ex.MFDS2020000302)" clearInput></ion-input>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col style="text-align: center;">
+          <ion-button (click)="applyClicked()" size="medium" color="dark">
+            신청하기
+          </ion-button>
         </ion-col>
       </ion-row>
     </ion-grid>
