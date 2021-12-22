@@ -7,11 +7,24 @@
         <ion-grid>
             <ion-row style="border: 1px solid black; width: 90%;">
                 <ion-col size="4" style="text-align: center;">
-                    제품 이름<br>
-                    용량, 가격
+                    <div style="transform: translateY(50%);">
+                        제품 이름<br>
+                        용량, 가격
+                    </div>
                 </ion-col>
                 <ion-col style="text-align:center;">
-                    별점
+                    <ion-row>
+                        <ion-col style="height: 35px; line-height: 35px;">
+                            별점
+                        </ion-col>
+                    </ion-row>
+                    <ion-row>
+                        <ion-col style="text-align: right;">
+                            <ion-button (click)="goReview()" size="small" color="dark" fill="clear">
+                                자세히 보기
+                            </ion-button>
+                        </ion-col>
+                    </ion-row>
                 </ion-col>
             </ion-row>
             <!-- 리뷰 개수만큼, 데이터 베이스 연동하여 포기 -->
