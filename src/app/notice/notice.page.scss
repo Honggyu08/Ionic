@@ -5,3 +5,42 @@ ion-back-button {
 ion-title {
     text-align: center;
 }
+
+ion-col {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    height: 40px;
+    line-height: 30px;
+}
+ion-row {
+    border-bottom: 2px solid #dad8d8;
+}
+
+.top {
+    font-weight: bold;
+    border-bottom: 3px solid #dad8d8;
+    .num {
+        font-size: small;
+    }
+    .title {
+        text-align: center;
+    }
+}
+
+.num {
+    text-align: center;
+}
+
+.title {
+    font-size: small;
+}
+
+.writer {
+    text-align: center;
+    font-size: small;
+}
+
+.date {
+    text-align: center;
+    font-size: small;
+}
