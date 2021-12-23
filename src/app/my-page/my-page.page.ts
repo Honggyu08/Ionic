@@ -14,7 +14,7 @@ export class MyPagePage implements OnInit {
   }
 
   goSetting() {
-    this.router.navigate(['/my-page/setting']);
+    this.router.navigate(['/my-page/setting/privacy']);
   }
 
   goProfile() {
