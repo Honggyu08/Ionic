@@ -28,29 +28,25 @@ ion-back-button {
     .nickName {
         width: 100%;
         margin: 0 auto;
-        margin-top: 11.2px;
+        // margin-top: 11.2px;
         text-align: center;
+        line-height: 44px;
     }
 
     .age {
         width: 100%;
         margin: 0 auto;
-        margin-top: 11.2px;
-        text-align: center
+        // margin-top: 11.2px;
+        text-align: center;
+        line-height: 44px;
     }
 
     .type {
         width: 100%;
         margin: 0 auto;
-        margin-top: 11.2px;
-        text-align: center
-    }
-
-    .manager {
-        width: 100%;
-        margin: 0 auto;
-        margin-top: 11.2px;
-        text-align: center
+        // margin-top: 11.2px;
+        text-align: center;
+        line-height: 44px;
     }
 
     .profilebtn {
@@ -70,25 +66,18 @@ ion-back-button {
     .pointIcon {
         width: 40px;
         height: 40px;
-        margin-top: 12px;
-        margin-bottom: 10px;
     }
     .point {
         display: inline-block;
         font-weight: bold;
         font-size: 30px;
-        margin-left: 20px;
-        margin-top: 10px;
-        margin-bottom: 10px;
+        margin-left: 10px;
     }
 
     .pointAmt {
         display: inline-block;
         color:  skyblue;
         font-size: 30px;
-        margin-left: 99px;
-        margin-top: 10px;
-        margin-bottom: 10px;
     }
 
     .pointUnit {
@@ -96,22 +85,17 @@ ion-back-button {
         font-size: 30px;
         font-weight: bold;
         margin-left: 10px;
-        margin-top: 10px;
-        margin-bottom: 10px;
+        margin-right: 10px;
     }
 
     .deliver {
         width: 40px;
         height: 40px;
-        margin-top: 12px;
-        margin-bottom: 10px;
     }
 
     .refund {
         width: 40px;
         height: 40px;
-        margin-top: 12px;
-        margin-bottom: 10px;
     }
 }
 

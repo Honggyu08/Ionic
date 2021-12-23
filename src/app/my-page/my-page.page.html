@@ -60,69 +60,88 @@
         <ion-col style="text-align: center;">
           <div style="display: inline-block;">
             내 리뷰 <!--내 리뷰 0: 숫자 데이터 연동 및 링크-->
+            <a (click)="reviewClick()" style="text-decoration: underline; color: red;">
+              0
+            </a>
           </div>
-          <a (click)="reviewClick()" style="text-decoration: underline; color: red;">
-            0
-          </a>
         </ion-col>
         <ion-col style="text-align: center;">
           <div style="display: inline-block;">
             내 아이디어 <!--내 아이디어 0: 숫자 데이터 연동 및 링크-->
+            <a (click)="ideaClick()" style="text-decoration: underline; color: red;">
+              0
+            </a>
           </div>
-          <a (click)="ideaClick()" style="text-decoration: underline; color: red;">
-            0
-          </a>
+          
         </ion-col>
         <ion-col style="text-align: center;">
           <diV style="display: inline-block;">
             내 다이어리 <!--내 다이어리 0: 숫자 데이터 연동 및 링크-->
+            <a (click)="diaryClick()" style="text-decoration: underline; color: red;">
+              0
+            </a>
           </diV>
-          <a (click)="diaryClick()" style="text-decoration: underline; color: red;">
-            0
-          </a>
         </ion-col>
       </ion-row>
       <ion-row class="line">
 
       </ion-row>
       <ion-row class="pointRow">
-        <ion-icon class="pointIcon" name="cash-outline"></ion-icon>
-        <div class="point">
-          88 포인트
-        </div>
-        <div class="pointAmt">
-          <a (click)="pointClick()">
-            0 <!--숫자 데이터 연동-->
-          </a>
-        </div>
-        <div class="pointUnit">
-          P
-        </div>
+        <ion-col size="1.5">
+          <ion-icon class="pointIcon" name="cash-outline"></ion-icon>
+        </ion-col>
+        <ion-col size="6.5">
+          <div class="point">
+            88 포인트
+          </div>
+        </ion-col>
+        <ion-col size="4" style="text-align: right;">
+          <div class="pointAmt">
+            <a (click)="pointClick()">
+              0 <!--숫자 데이터 연동-->
+            </a>
+          </div>
+          <div class="pointUnit">
+            P
+          </div>
+        </ion-col>
       </ion-row>
       <ion-row class="line">
 
       </ion-row>
       <ion-row>
-        <ion-icon class="deliver" name="rocket-outline"></ion-icon>
-        <div style="display: inline-block; font-weight: bold; font-size: 20px; margin-left: 20px; margin-top: 19px; margin-bottom: 19px; height: 22px;">
-          구매목록/배송조회
-        </div>
-        <div style="font-size: 30px; margin-top: 10px; margin-bottom: 10px; margin-left: 80px">
-          <a (click)="purchaseClick()" style="color: red;">
-            2 <!--숫자 데이터 연동 및 링크-->
-          </a>
-        </div>
+        <ion-col size="1.5">
+          <ion-icon class="deliver" name="rocket-outline"></ion-icon>
+        </ion-col>
+        <ion-col size="6.5">
+          <div style="display: inline-block; font-weight: bold; font-size: 20px; margin-left: 10px;">
+            구매목록/배송조회
+          </div>
+        </ion-col>
+        <ion-col size="4" style="text-align: right;">
+          <div style="font-size: 30px; margin-right: 38.45px;">
+            <a (click)="purchaseClick()" style="color: red;">
+              2 <!--숫자 데이터 연동 및 링크-->
+            </a>
+          </div>
+        </ion-col>
       </ion-row>
       <ion-row>
-        <ion-icon class="refund" name="reload-outline"></ion-icon>
-        <div style="display: inline-block; font-weight: bold; font-size: 20px; margin-left: 20px; margin-top: 19px; margin-bottom: 19px; height: 22px;">
-          취소/반품조회
-        </div>
-        <div style="font-size: 30px; margin-top: 10px; margin-bottom: 10px; margin-left: 114px">
-          <a (click)="refundClick()" style="color: red;">
-            0 <!--숫자 데이터 연동 및 링크-->  
-          </a>
-        </div>
+        <ion-col size="1.5">
+          <ion-icon class="refund" name="reload-outline"></ion-icon>
+        </ion-col>
+        <ion-col size="6.5">
+          <div style="display: inline-block; font-weight: bold; font-size: 20px; margin-left: 10px;">
+            취소/반품조회
+          </div>
+        </ion-col>
+        <ion-col size="4" style="text-align: right;">
+          <div style="font-size: 30px; margin-right: 38.45px;">
+            <a (click)="refundClick()" style="color: red;">
+              0 <!--숫자 데이터 연동 및 링크-->  
+            </a>
+          </div>
+        </ion-col>
       </ion-row>
     </ion-grid>
   </div>
