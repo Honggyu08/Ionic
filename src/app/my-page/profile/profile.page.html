@@ -145,10 +145,12 @@
       <!-- 분석 결과 동기화 -->
     </ion-row>
     <ion-row>
-      <ion-button class="save" color="dark" (click)="saveButtonClick()">
-        저장
-        <!-- 데이터 저장하는 법 알아보고 적용 -->
-      </ion-button>
+      <ion-col>
+        <ion-button class="save" (click)="saveButtonClick()" color="dark">
+          저장
+          <!-- 데이터 저장하는 법 알아보고 적용 -->
+        </ion-button>
+      </ion-col>
     </ion-row>
   </ion-grid>
 </ion-content>
