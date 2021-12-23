@@ -6,13 +6,11 @@ ion-title {
     text-align: center;
 }
 
-ion-col {
-    padding-top: 5px;
-    padding-bottom: 5px;
-    height: 40px;
-    line-height: 30px;
+.container {
+    height: 100%;
 }
-ion-row {
+
+.post {
     border-bottom: 2px solid #dad8d8;
 }
 
@@ -29,18 +27,53 @@ ion-row {
 
 .num {
     text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    height: 40px;
+    line-height: 30px;
 }
 
 .title {
     font-size: small;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    height: 40px;
+    line-height: 30px;
 }
 
 .writer {
     text-align: center;
     font-size: small;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    height: 40px;
+    line-height: 30px;
 }
 
 .date {
     text-align: center;
     font-size: small;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    height: 40px;
+    line-height: 30px;
+}
+
+.bottom {
+    position: relative;
+    bottom: -45%;
+    border: 1px solid black;
+}
+.bottom_col {
+    text-align: center;
+}
+
+.bottom_col:first-child {
+    border-right: 1px solid black;
+}
+
+.call_center {
+    position:relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
