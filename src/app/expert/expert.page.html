@@ -13,17 +13,18 @@
       <ion-row>
         <ion-col size="4">
           <!-- line-height 조정 -->
-          <div style="font-size: small; text-align: center; border: 1px solid black; border-radius: 5px; height: 100%; line-height: 39px;">
+          <div class="occupation">
             직종
           </div>
         </ion-col>
+        <ion-col size="2"></ion-col>
         <ion-col size="3">
           <ion-input style="border-bottom: 1px solid black;"></ion-input>
         </ion-col>
       </ion-row>
       <ion-row>
-        <ion-col size="5">
-          <div style="font-size: small; text-align: center; border: 1px solid black; border-radius: 5px; height: 100%; line-height: 39px;">
+        <ion-col size="6">
+          <div class="others">
             기타 화장품 관련 종사자
           </div>
         </ion-col>
@@ -57,7 +58,7 @@
         </ion-col>
       </ion-row>
       <ion-row>
-        <ion-col style="text-align: center;">
+        <ion-col style="text-align: center; margin-top: 20px;">
           <ion-button (click)="applyClicked()" size="medium" color="dark">
             신청하기
           </ion-button>
