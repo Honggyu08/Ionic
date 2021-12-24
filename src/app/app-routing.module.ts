@@ -72,6 +72,10 @@ const routes: Routes = [
     path: 'expert',
     loadChildren: () => import('./expert/expert.module').then( m => m.ExpertPageModule)
   },
+  {
+    path: 'search',
+    loadChildren: () => import('./search/search.module').then( m => m.SearchPageModule)
+  },
 ];
 
 @NgModule({

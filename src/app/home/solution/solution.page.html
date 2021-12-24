@@ -3,20 +3,42 @@
 
 <ion-header>
   <ion-toolbar>
-
+    <ion-button class="menu" slot="start" fill="clear">
+      <ion-menu-button color="dark"></ion-menu-button>
+    </ion-button>
+    <!-- 가장 좌측 메뉴 버튼 -->
+    <ion-title>
+      <div class="appTitle">88 MADE</div>
+    </ion-title>
+    <!-- 앱 타이틀 -->
+    <ion-button class="search" (click)="goSearch()" slot="end" fill="clear" size="small">
+      <ion-icon name="search-outline" color="dark"></ion-icon>
+    </ion-button>
+    <!-- 검색 버튼 -->
+    <ion-button class="cart" (click)="goCart()" slot="end" fill="clear" size="small">
+      <ion-icon name="cart-outline" color="dark"></ion-icon>
+    </ion-button>
+    <!-- 장바구니 버튼 -->
   </ion-toolbar>
-  <h1>Skin Cude System</h1>
 </ion-header>
-  
+
+<ion-header>
+  <ion-toolbar style="height: 50px; text-align: center;">
+    <div class="subtitle">
+      Skin Cude System
+    </div>
+  </ion-toolbar>
+</ion-header>
+
 <ion-content>
   <ion-tabs>
-    <ion-tab-bar slot="top" style="background-color: transparent; margin-top:10px;">
-      <ion-tab-button tab="sys-explain" style="font-size: medium; background-color: transparent;">
+    <ion-tab-bar slot="top">
+      <ion-tab-button tab="sys-explain">
         <ion-label>
           Skin Cube System?
         </ion-label>
       </ion-tab-button>
-      <ion-tab-button tab="sys-progress" style="font-size: medium; background-color: transparent;">
+      <ion-tab-button tab="sys-progress">
         <ion-label>
           Skin Cude System 진단
         </ion-label>

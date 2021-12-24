@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Search</ion-title>  
+  </ion-toolbar>
+  <ion-toolbar>
+    <ion-searchbar inputmode="search" type="search"></ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- 데이터베이스 연결 -->
+  <ion-tabs>
+    <ion-tab-bar slot="top">
+      <ion-tab-button tab="popular">인기 검색어</ion-tab-button>
+      <ion-tab-button tab="recent">최근 검색어</ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+</ion-content>

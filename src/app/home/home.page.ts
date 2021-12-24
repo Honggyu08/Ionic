@@ -62,4 +62,8 @@ export class HomePage implements OnInit {
   goExpert() {
     this.router.navigate(['/expert']);
   }
+
+  goSearch() {
+    this.router.navigate(['/search/popular']);
+  }
 }

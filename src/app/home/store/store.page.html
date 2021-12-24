@@ -3,7 +3,22 @@
 
 <ion-header>
   <ion-toolbar>
-
+    <ion-button class="menu" slot="start" fill="clear">
+      <ion-menu-button color="dark"></ion-menu-button>
+    </ion-button>
+    <!-- 가장 좌측 메뉴 버튼 -->
+    <ion-title>
+      <div class="appTitle">88 MADE</div>
+    </ion-title>
+    <!-- 앱 타이틀 -->
+    <ion-button class="search" (click)="goSearch()" slot="end" fill="clear" size="small">
+      <ion-icon name="search-outline" color="dark"></ion-icon>
+    </ion-button>
+    <!-- 검색 버튼 -->
+    <ion-button class="cart" (click)="goCart()" slot="end" fill="clear" size="small">
+      <ion-icon name="cart-outline" color="dark"></ion-icon>
+    </ion-button>
+    <!-- 장바구니 버튼 -->
   </ion-toolbar>
 </ion-header>
   
