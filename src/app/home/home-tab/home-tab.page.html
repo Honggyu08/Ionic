@@ -23,6 +23,49 @@
   
 <ion-content>
   <div class="container">
-
+    <div class="ad">
+      광고
+    </div>
+    <ion-grid>
+      <ion-row style="border-bottom: 1px solid rgb(167, 167, 167);">
+        <ion-col class="rank">
+          주간 뷰티랭킹
+        </ion-col>
+        <ion-col class="date">
+          2021.03.05 기준
+        </ion-col>
+        <ion-col style="text-align: right;">
+          <ion-button (click)="func()" fill="clear" size="small" color="dark">
+            <ion-icon name="chevron-forward-outline"></ion-icon>
+          </ion-button>
+        </ion-col>
+      </ion-row>
+      <ion-row style="border-bottom: 1px solid rgb(167, 167, 167);">
+        <ion-col style="height: 30px">
+          <!-- 가로스크롤 알아보기 -->
+          <ion-tabs>
+            <ion-tab-bar>
+              <ion-tab-button tab="moisture">
+                수분에센스
+              </ion-tab-button>
+              <ion-tab-button tab="bubble">
+                버블클렌져
+              </ion-tab-button>
+              <ion-tab-button tab="eye">
+                아이팔레트
+              </ion-tab-button>
+              <ion-tab-button tab="found">
+                쿠션파데
+              </ion-tab-button>
+            </ion-tab-bar>
+          </ion-tabs>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col class="product"></ion-col>
+        <ion-col class="product"></ion-col>
+        <ion-col class="product"></ion-col>
+      </ion-row>
+    </ion-grid>
   </div>
 </ion-content>
