@@ -22,6 +22,34 @@
   </ion-toolbar>
 </ion-header>
   
+<ion-header>
+  <ion-toolbar color="white" style="height: 50px; text-align: center;">
+    <div class="subtitle">
+      IDEA
+    </div>
+  </ion-toolbar>
+</ion-header>
+
 <ion-content>
-  <h1>Ideas</h1>
+  <div class="container">
+    <ion-tabs>
+      <ion-tab-bar slot="top">
+        <ion-tab-button tab="idea-explain">
+          <ion-label>
+            IDEA?
+          </ion-label>
+        </ion-tab-button>
+        <ion-tab-button tab="idea-submit">
+          <ion-label>
+            IDEA SUBMIT
+          </ion-label>
+        </ion-tab-button>
+        <ion-tab-button tab="my-idea">
+          <ion-label>
+            MY IDEA
+          </ion-label>
+        </ion-tab-button>
+      </ion-tab-bar>
+    </ion-tabs>
+  </div>
 </ion-content>
