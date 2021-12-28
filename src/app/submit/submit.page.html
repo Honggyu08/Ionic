@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>IDEA SUBMIT</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label>
+        카테고리 (중복 선택 가능)
+      </ion-label>
+      <ion-select multiple="true" cancelText="cancel" okText="OK" interface="popover">
+        <ion-select-option value="calm">진정</ion-select-option>
+        <ion-select-option value="whiten">미백</ion-select-option>
+        <ion-select-option value="wrinkle">주름</ion-select-option>
+        <ion-select-option value="moisture">보습</ion-select-option>
+        <ion-select-option value="pores">모공</ion-select-option>
+        <ion-select-option value="acne">여드름</ion-select-option>
+        <ion-select-option value="blush">홍조</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item lines="none">
+      <ion-label>
+        기획 제목/상품명
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-input placeholder="기획 제목/상품명을 입력해주세요"></ion-input>
+    </ion-item>
+    <ion-item lines="none">
+      <ion-label>
+        기획하게된 계기/배경
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-textarea placeholder="계기/배경을 상세히 입력해주세요"></ion-textarea>
+    </ion-item>
+    <ion-item lines="none">
+      <ion-label>
+        기획하고자 하는 맞춤형 혼합성분 및 소분 화장품
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-textarea placeholder="상세한 내용을 입력해주세요"></ion-textarea>
+    </ion-item>
+    <!-- textarea 글자수 제한 알아보기 -->
+  </ion-list>
+</ion-content>

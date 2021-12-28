@@ -31,7 +31,7 @@ const routes: Routes = [
     path: '',
     redirectTo: 'ideas/idea-explain',
     pathMatch: 'full'
-  }
+  },
 ];
 
 @NgModule({
