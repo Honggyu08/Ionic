@@ -5,7 +5,7 @@ import { IdeasPage } from './ideas.page';
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'ideas',
     component: IdeasPage,
     children: [
       {
@@ -19,9 +19,19 @@ const routes: Routes = [
       {
         path: 'my-idea',
         loadChildren: () => import('./my-idea/my-idea.module').then( m => m.MyIdeaPageModule)
+      },
+      {
+        path: '',
+        redirectTo: 'ideas/idea-explain',
+        pathMatch: 'full'
       }
     ]
   },
+  {
+    path: '',
+    redirectTo: 'ideas/idea-explain',
+    pathMatch: 'full'
+  }
 ];
 
 @NgModule({
