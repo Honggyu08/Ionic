@@ -79,6 +79,10 @@ const routes: Routes = [
     path: 'submit',
     loadChildren: () => import('./submit/submit.module').then( m => m.SubmitPageModule)
   },
+  {
+    path: 'diagnosis',
+    loadChildren: () => import('./diagnosis/diagnosis.module').then( m => m.DiagnosisPageModule)
+  },
 
 
 ];

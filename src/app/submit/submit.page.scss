@@ -9,3 +9,10 @@ ion-title {
 ion-textarea {
     height: 40px;
 }
+
+.submit {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -35%;
+}
