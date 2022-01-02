@@ -1,4 +1,14 @@
+ion-back-button {
+    color: black;
+}
+
 .takePhoto {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+ion-avatar {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
