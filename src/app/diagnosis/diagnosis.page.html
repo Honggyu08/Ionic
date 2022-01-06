@@ -8,10 +8,17 @@
 </ion-header>
 
 <ion-content>
-  <div class="container">
-    <div class="photoCard">
-      <img class="photo" [src]="selectedImage ? selectedImage.webPath : 'assets/user.png'"/>
-    </div>
-    <ion-button class="takePhoto" (click)="takePicture()" color="dark" size="medium">사진 촬영</ion-button>
-  </div>
+  <ion-tabs>
+    <ion-tab-bar slot="top">
+      <ion-tab-button tab="right">
+        <ion-label>우측</ion-label>
+      </ion-tab-button>
+      <ion-tab-button tab="front">
+        <ion-label>정면</ion-label>
+      </ion-tab-button>
+      <ion-tab-button tab="left">
+        <ion-label>좌측</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
 </ion-content>

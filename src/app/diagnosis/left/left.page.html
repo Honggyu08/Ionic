@@ -1,0 +1,11 @@
+<ion-header>
+</ion-header>
+
+<ion-content>
+  <div class="container">
+    <div class="photoCard">
+      <img class="photo" [src]="selectedImage ? selectedImage.webPath : 'assets/user.png'"/>
+    </div>
+    <ion-button class="takePhoto" (click)="takePicture()" color="dark" size="medium">사진 촬영</ion-button>
+  </div>
+</ion-content>

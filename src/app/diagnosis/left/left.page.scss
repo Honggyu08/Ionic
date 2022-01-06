@@ -1,0 +1,30 @@
+ion-back-button {
+    color: black;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    .takePhoto {
+        position: relative;
+        left: 50%;
+        bottom: -5%;
+        transform: translateX(-50%);
+    }
+    
+    .photoCard {
+        width: 90%;
+        height: 80%;
+        position: relative;
+        left: 50%;
+        top: 45%;
+        transform: translate(-50%, -50%);
+
+        .photo {
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}
