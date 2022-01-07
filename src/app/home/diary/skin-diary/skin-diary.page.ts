@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-skin-diary',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SkinDiaryPage implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
 
+  diagnosis() {
+    this.router.navigate(['/diagnosis']);
+  }
 }
