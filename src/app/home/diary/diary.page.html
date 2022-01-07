@@ -21,7 +21,30 @@
     <!-- 장바구니 버튼 -->
   </ion-toolbar>
 </ion-header>
-  
+
+<ion-header>
+  <ion-toolbar color="white" style="height: 50px; text-align: center;">
+    <div class="subtitle">
+      DIARY
+    </div>
+  </ion-toolbar>
+</ion-header>
+
 <ion-content>
-  <h1>Diary</h1>
+  <div class="container">
+    <ion-tabs>
+      <ion-tab-bar slot="top">
+        <ion-tab-button tab="diary-explain">
+          <ion-label>
+            SKIN DIARY란
+          </ion-label>
+        </ion-tab-button>
+        <ion-tab-button tab="skin-diary">
+          <ion-label>
+            SKIN DIARY
+          </ion-label>
+        </ion-tab-button>
+      </ion-tab-bar>
+    </ion-tabs>
+  </div>
 </ion-content>
