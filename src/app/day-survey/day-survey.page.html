@@ -1,0 +1,72 @@
+<ion-header>
+  <ion-toolbar>
+    <div class="toolbar">
+      <div><img src="assets/logo.png" alt="logo" class="logo"></div>
+      <div class="name">피부진단 기초설문</div>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="container">
+    <ion-list>
+      <ion-item>
+        <ion-label>현재 기분 상태는?</ion-label>
+        <ion-select interface="popover">
+          <ion-select-option value="H">Happy</ion-select-option>
+          <ion-select-option value="M">Mad</ion-select-option>
+          <ion-select-option value="S">Sad</ion-select-option>
+          <ion-select-option value="St">Stressed</ion-select-option>
+          <ion-select-option value="Ss">So so</ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>지난 밤 수면 시간은?</ion-label>
+        <ion-select interface="popover">
+          <ion-select-option value="6">6시간 미만</ion-select-option>
+          <ion-select-option value="7">6~7시간</ion-select-option>
+          <ion-select-option value="8">7~8시간</ion-select-option>
+          <ion-select-option value="9">8시간 이상</ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>지금 피부 상태는?</ion-label>
+        <ion-select interface="popover">
+          <ion-select-option value="광고">Excellent</ion-select-option>
+          <ion-select-option value="지인 추천">Good</ion-select-option>
+          <ion-select-option value="가게 추천">Normal</ion-select-option>
+          <ion-select-option value="가게 추천">Not so good</ion-select-option>
+          <ion-select-option value="가게 추천">Awful</ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>하루 평균 물 섭취량은?</ion-label>
+        <ion-select interface="popover">
+          <ion-select-option value="0">거의 안 마신다</ion-select-option>
+          <ion-select-option value="1">1L 미만</ion-select-option>
+          <ion-select-option value="2">1~2L</ion-select-option>
+          <ion-select-option value="3">2L 이상</ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>생리 중인가요?</ion-label>
+        <ion-select interface="popover">
+          <ion-select-option value="N">NO</ion-select-option>
+          <ion-select-option value="Y">YES</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
+
+    <div class="btn-wrap">
+      <ion-button class="btn" (click)="diagnosis()" slot="ion-button" color="dark">NEXT</ion-button>
+      <ion-button class="bbtn" slot="ion-button" color="dark">
+        <ion-back-button icon="" text="BACK" defaultHref="home" style="color: white; width: 100%;"></ion-back-button>
+      </ion-button>
+    </div>
+  </div>
+
+</ion-content>

@@ -83,6 +83,10 @@ const routes: Routes = [
     path: 'diagnosis',
     loadChildren: () => import('./diagnosis/diagnosis.module').then( m => m.DiagnosisPageModule)
   },
+  {
+    path: 'day-survey',
+    loadChildren: () => import('./day-survey/day-survey.module').then( m => m.DaySurveyPageModule)
+  },
 
 
 ];

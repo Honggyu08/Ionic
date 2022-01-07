@@ -13,7 +13,7 @@ export class SkinDiaryPage implements OnInit {
   ngOnInit() {
   }
 
-  diagnosis() {
-    this.router.navigate(['/diagnosis']);
+  survey() {
+    this.router.navigate(['/day-survey']);
   }
 }
