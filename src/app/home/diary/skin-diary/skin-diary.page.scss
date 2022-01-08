@@ -4,10 +4,18 @@
     text-align: left;
     padding-top: 10px;
     
-    .check {
+    .btns {
         width: 100%;
         text-align: center;
         position: absolute;
         bottom: 1%;
+
+        .check {
+            width: 161.312px;
+        }
+
+        .calendar {
+            width: 161.312px;
+        }
     }
 }

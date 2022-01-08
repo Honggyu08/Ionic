@@ -16,4 +16,8 @@ export class SkinDiaryPage implements OnInit {
   survey() {
     this.router.navigate(['/day-survey']);
   }
+
+  goCalendar() {
+    this.router.navigate(['/calendar']);
+  }
 }

@@ -87,6 +87,10 @@ const routes: Routes = [
     path: 'day-survey',
     loadChildren: () => import('./day-survey/day-survey.module').then( m => m.DaySurveyPageModule)
   },
+  {
+    path: 'calendar',
+    loadChildren: () => import('./calendar/calendar.module').then( m => m.CalendarPageModule)
+  },
 
 
 ];
