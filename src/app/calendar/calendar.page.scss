@@ -4,10 +4,16 @@ ion-back-button {
 
 .backbtn {
     color: black;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .nextbtn {
     color: black;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 ion-icon {
