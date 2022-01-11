@@ -57,11 +57,13 @@
     </ion-col>
   </ion-row>
 
+  <!-- onEventSelected로 상세페이지 이동?? -->
   <calendar
   [eventSource]="eventSource"
   [calendarMode]="calendar.mode"
   [currentDate]="calendar.currentDate"
   (onTitleChanged)="onViewTitleChanged($event)"
+  (onEventSelected)="onEventSelected($event)"
   [monthviewDisplayEventTemplate]="temp"
   >
   </calendar>

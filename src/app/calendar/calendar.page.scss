@@ -32,3 +32,10 @@ ion-icon {
     border-radius: 5px;
     display: table-cell;
 }
+
+// global.scss에 있는거 대신 이것도 가능
+// :host ::ng-deep {
+//     .monthview-primary-with-event {
+//         background-color: black;
+//     }
+// }

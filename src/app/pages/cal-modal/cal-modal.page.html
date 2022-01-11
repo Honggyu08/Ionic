@@ -21,6 +21,16 @@
     <ion-label position="stacked">Description</ion-label>
     <ion-input type="text" [(ngModel)]="event.desc"></ion-input>
   </ion-item>
+  <ion-item>
+    <ion-label position="stacked">All Day</ion-label>
+    <ion-toggle [(ngModel)]="event.allDay"></ion-toggle>
+  </ion-item>
+  <ion-item>
+    <ion-label position="stacked">start time</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label position="stacked">end time</ion-label>
+  </ion-item>
   
   <calendar
     *ngIf="modalReady"

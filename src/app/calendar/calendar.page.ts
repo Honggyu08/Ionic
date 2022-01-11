@@ -2,6 +2,7 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { ModalController } from '@ionic/angular';
 import { CalendarComponent } from 'ionic2-calendar';
 import { CalModalPage } from '../pages/cal-modal/cal-modal.page';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-calendar',
@@ -19,7 +20,7 @@ export class CalendarPage implements OnInit {
 
   @ViewChild(CalendarComponent) myCal: CalendarComponent;
   
-  constructor(private modalCtrl: ModalController) { }
+  constructor(private modalCtrl: ModalController, private router: Router) { }
 
   ngOnInit() {
   }
@@ -34,6 +35,47 @@ export class CalendarPage implements OnInit {
 
   onViewTitleChanged(title) {
     this.viewTitle = title;
+  }
+
+  // 전송??
+  onEventSelected(event) {
+    this.modalCtrl.dismiss(event);
+    this.router.navigate(['/detail']);
+  }
+
+  async openCalModal() {
+    const modal = await this.modalCtrl.create({
+      component: CalModalPage,
+      cssClass: 'cal-modal',
+      backdropDismiss: false
+    });
+
+    await modal.present();
+
+    modal.onDidDismiss().then((result) => {
+      if (result.data && result.data.event) {
+        let event = result.data.event;
+        if (event.allDay) {
+          let start = event.startTime;
+          event.startTime = new Date(
+            Date.UTC(
+              start.getUTCFullYear(),
+              start.getUTCMonth(),
+              start.getUTCDate()
+            )
+          );
+          event.endTime = new Date(
+            Date.UTC(
+              start.getUTCFullYear(),
+              start.getUTCMonth(),
+              start.getUTCDate() + 1
+            )
+          );
+        }
+        this.eventSource.push(result.data.event);
+        this.myCal.loadEvents();
+      }
+    });
   }
 
   // createRandomEvents() {
@@ -100,39 +142,4 @@ export class CalendarPage implements OnInit {
   // removeEvents() {
   //   this.eventSource = [];
   // }
-
-  async openCalModal() {
-    const modal = await this.modalCtrl.create({
-      component: CalModalPage,
-      cssClass: 'cal-modal',
-      backdropDismiss: false
-    });
-
-    await modal.present();
-
-    modal.onDidDismiss().then((result) => {
-      if (result.data && result.data.event) {
-        let event = result.data.event;
-        if (event.allDay) {
-          let start = event.startTime;
-          event.startTime = new Date(
-            Date.UTC(
-              start.getUTCFullYear(),
-              start.getUTCMonth(),
-              start.getUTCDate()
-            )
-          );
-          event.endTime = new Date(
-            Date.UTC(
-              start.getUTCFullYear(),
-              start.getUTCMonth(),
-              start.getUTCDate() + 1
-            )
-          );
-        }
-        this.eventSource.push(result.data.event);
-        this.myCal.loadEvents();
-      }
-    });
-  }
 }
