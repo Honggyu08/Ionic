@@ -31,6 +31,9 @@
     padding: 25px;
 }
 
+.monthview-primary-with-event, .calendar-event-inner {
+    background-color: black !important;
+}
 // //scroll bar hide
 // ion-content {
 //     width: calc(100% + 15px);

@@ -20,15 +20,15 @@ ion-icon {
     color: black;
 }
 
-// .indicator-container {
-//     padding-left: 0.5rem;
-//     padding-bottom: 0.4rem;
-// }
+.indicator-container {
+    padding-left: 0.5rem;
+    padding-bottom: 0.4rem;
+}
 
-// .event-container {
-//     background: black;
-//     width: 5px;
-//     height: 5px;
-//     border-radius: 5px;
-//     display: table-cell;
-// }
+.event-indicator {
+    background: white;
+    width: 5px;
+    height: 5px;
+    border-radius: 5px;
+    display: table-cell;
+}

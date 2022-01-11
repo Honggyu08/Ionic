@@ -62,16 +62,16 @@
   [calendarMode]="calendar.mode"
   [currentDate]="calendar.currentDate"
   (onTitleChanged)="onViewTitleChanged($event)"
-  [monthviewDisplayEventTamplate]="temp"
+  [monthviewDisplayEventTemplate]="temp"
   >
   </calendar>
 
   <ng-template #temp let-view="view" let-row="row" let-col="col">
     <div [class.with-event]="view.dates[row*7+col].events.length">
-      {{view.dates[row*7+col].label}} TEST
-      <!-- <div class="indicator-container">
+      {{view.dates[row*7+col].label}}
+      <div class="indicator-container">
         <div class="event-indicator" *ngFor="let e of view.dates[row*7+col].events"></div>
-      </div> -->
+      </div>
     </div>
   </ng-template>
 </ion-content>
