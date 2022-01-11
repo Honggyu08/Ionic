@@ -75,7 +75,8 @@ const routes: Routes = [
   {
     path: 'search',
     loadChildren: () => import('./search/search.module').then( m => m.SearchPageModule)
-  },  {
+  },
+  {
     path: 'submit',
     loadChildren: () => import('./submit/submit.module').then( m => m.SubmitPageModule)
   },
@@ -90,10 +91,6 @@ const routes: Routes = [
   {
     path: 'calendar',
     loadChildren: () => import('./calendar/calendar.module').then( m => m.CalendarPageModule)
-  },
-  {
-    path: 'cal-modal',
-    loadChildren: () => import('./pages/cal-modal/cal-modal.module').then( m => m.CalModalPageModule)
   },
   {
     path: 'detail',

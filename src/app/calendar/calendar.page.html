@@ -5,7 +5,7 @@
     </ion-buttons>
     <ion-title>CALENDAR</ion-title>
     <ion-buttons slot="end">
-      <ion-button (click)="openCalModal()">
+      <ion-button id="openCalModal">
         <ion-icon name="add" slot="icon-only"></ion-icon>
       </ion-button>
     </ion-buttons>
@@ -13,6 +13,29 @@
 </ion-header>
 
 <ion-content>
+
+  <!-- 모달 수정 -->
+  <ion-modal trigger="openCalModal">
+    <ng-template>
+      <ion-content>
+        <ion-datetime>
+          <ion-item>
+            <ion-label position="stacked">Title</ion-label>
+            <ion-input type="text" [(ngModel)]="event.title"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="stacked">Description</ion-label>
+            <ion-input type="text" [(ngModel)]="event.desc"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="stacked">All Day</ion-label>
+            <ion-toggle [(ngModel)]="event.allDay"></ion-toggle>
+          </ion-item>
+        </ion-datetime>
+      </ion-content>
+    </ng-template>
+  </ion-modal>
+
   <ion-segment [(ngModel)]="calendar.mode">
     <ion-segment-button value="month">
       <ion-label>Month</ion-label>
@@ -24,20 +47,6 @@
       <ion-label>Day</ion-label>
     </ion-segment-button>
   </ion-segment>
-<!-- 
-  <ion-row>
-    <ion-col size="6">
-      <ion-button (click)="createRandomEvents()" expend="block" fill="outline">
-        Add random events
-      </ion-button>
-    </ion-col>
-    <ion-col size="6">
-      <ion-button (click)="removeEvents()" expand="block" fill="outline">
-        Remove all events
-      </ion-button>
-    </ion-col>
-  </ion-row> 
--->
 
   <ion-row>
     <ion-col size="2">
@@ -63,7 +72,6 @@
   [calendarMode]="calendar.mode"
   [currentDate]="calendar.currentDate"
   (onTitleChanged)="onViewTitleChanged($event)"
-  (onEventSelected)="onEventSelected($event)"
   [monthviewDisplayEventTemplate]="temp"
   >
   </calendar>
