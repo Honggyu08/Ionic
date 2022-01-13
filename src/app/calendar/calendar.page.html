@@ -18,19 +18,34 @@
   <ion-modal trigger="openCalModal">
     <ng-template>
       <ion-content>
-        <ion-datetime>
-          <ion-item>
-            <ion-label position="stacked">Title</ion-label>
-            <ion-input type="text" [(ngModel)]="event.title"></ion-input>
-          </ion-item>
-          <ion-item>
-            <ion-label position="stacked">Description</ion-label>
-            <ion-input type="text" [(ngModel)]="event.desc"></ion-input>
-          </ion-item>
-          <ion-item>
-            <ion-label position="stacked">All Day</ion-label>
-            <ion-toggle [(ngModel)]="event.allDay"></ion-toggle>
-          </ion-item>
+        <ion-datetime size="cover"
+        #datetime
+        (ionChange)="dateChanged(datetime.value)">
+          <ion-grid slot="buttons">
+            <ion-row>
+              <ion-label position="stacked">Title</ion-label>
+            </ion-row>
+            <ion-row>
+              <ion-input required="true" type="text" [(ngModel)]="event.title"></ion-input>
+            </ion-row>
+            <ion-row>
+              <ion-label position="stacked">Description</ion-label>
+            </ion-row>
+            <ion-row>
+              <ion-input type="text" [(ngModel)]="event.desc"></ion-input>
+            </ion-row>
+            <ion-row>
+              <ion-col>
+                <ion-label position="stacked" style="display: inline-block;">All Day</ion-label>
+              </ion-col>
+              <ion-col size="8" style="text-align: right;">
+                <ion-toggle [(ngModel)]="event.allDay"></ion-toggle>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-button (click)="save()" color="primary" size="small">SAVE</ion-button>
+            </ion-row>
+          </ion-grid>
         </ion-datetime>
       </ion-content>
     </ng-template>
